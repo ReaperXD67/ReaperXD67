@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" role="img" aria-labelledby="title desc">
+  <title id="title">Aman Kumar, AI Systems Engineer</title>
+  <desc id="desc">Animated control-plane graphic representing evidence retrieval, agent orchestration, and reliable production systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061426"/><stop offset=".52" stop-color="#0a2440"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#35e0c1"/><stop offset="1" stop-color="#4d8dff"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#35e0c1" stop-opacity=".28"/><stop offset="1" stop-color="#35e0c1" stop-opacity="0"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#7da8c7" stroke-opacity=".09"/></pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="898" height="338" rx="24"/></clipPath>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+      .trace{fill:none;stroke:#35e0c1;stroke-width:1.2;stroke-opacity:.52;stroke-dasharray:5 12}.trace2{fill:none;stroke:#4d8dff;stroke-width:1;stroke-opacity:.42;stroke-dasharray:2 10}
+      .node{fill:#071827;stroke:#35e0c1;stroke-width:1.3}.minor{fill:#4d8dff}.label{fill:#8ea9bd;font-size:11px;letter-spacing:1.7px}.value{fill:#eaf6ff}.muted{fill:#91aabc}
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="900" height="340" fill="url(#bg)"/>
+    <rect width="900" height="340" fill="url(#grid)"/>
+    <circle cx="715" cy="145" r="180" fill="url(#glow)" filter="url(#soft)"><animate attributeName="opacity" values=".45;.8;.45" dur="6s" repeatCount="indefinite"/></circle>
+    <path class="trace" d="M484 76C560 76 563 142 638 142S720 72 856 72"><animate attributeName="stroke-dashoffset" from="0" to="-68" dur="5s" repeatCount="indefinite"/></path>
+    <path class="trace2" d="M484 169C555 169 574 229 650 229S746 165 856 165"><animate attributeName="stroke-dashoffset" from="0" to="48" dur="4s" repeatCount="indefinite"/></path>
+    <path class="trace" d="M484 262C563 262 582 193 672 193S757 273 856 273"><animate attributeName="stroke-dashoffset" from="0" to="-68" dur="6s" repeatCount="indefinite"/></path>
+    <g class="mono">
+      <rect x="510" y="54" width="102" height="42" rx="8" class="node"/><text x="526" y="72" class="label">RETRIEVE</text><text x="526" y="87" class="value" font-size="10">dense + sparse</text>
+      <rect x="646" y="119" width="92" height="46" rx="8" class="node"/><text x="662" y="137" class="label">FUSE</text><text x="662" y="152" class="value" font-size="10">rank + rerank</text>
+      <rect x="688" y="206" width="104" height="46" rx="8" class="node"/><text x="704" y="224" class="label">CONTROL</text><text x="704" y="239" class="value" font-size="10">policy + audit</text>
+      <circle cx="830" cy="72" r="4" class="minor"><animate attributeName="r" values="3;6;3" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="815" cy="165" r="4" fill="#35e0c1"><animate attributeName="opacity" values=".35;1;.35" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="843" cy="273" r="4" class="minor"><animate attributeName="r" values="3;6;3" dur="3.2s" repeatCount="indefinite"/></circle>
+    </g>
+    <g transform="translate(52 60)">
+      <g class="mono"><circle cx="5" cy="5" r="5" fill="#35e0c1"/><text x="19" y="9" class="label">SYSTEM ONLINE · BENGALURU</text></g>
+      <text y="78" class="sans value" font-size="48" font-weight="760" letter-spacing="-1.6">AMAN KUMAR</text>
+      <text y="112" class="mono" fill="url(#accent)" font-size="18" font-weight="600" letter-spacing="2.5">AI SYSTEMS ENGINEER</text>
+      <text y="157" class="sans muted" font-size="16">Production LLMs · Evidence-first RAG</text>
+      <text y="183" class="sans muted" font-size="16">Self-adaptive agents · Distributed systems</text>
+      <g class="mono" transform="translate(0 224)">
+        <rect width="365" height="34" rx="17" fill="#0b1d30" stroke="#54738a" stroke-opacity=".55"/>
+        <text x="18" y="22" fill="#b7ccda" font-size="11" letter-spacing="1">BUILD → MEASURE → VERIFY → SHIP</text>
+        <rect x="335" y="13" width="9" height="9" rx="2" fill="#35e0c1"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></rect>
+      </g>
+    </g>
+    <rect x="1" y="1" width="898" height="338" rx="24" fill="none" stroke="url(#accent)" stroke-opacity=".55"/>
+  </g>
+</svg>
