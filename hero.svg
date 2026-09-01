@@ -1,46 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" role="img" aria-labelledby="title desc">
-  <title id="title">Aman Kumar, AI Systems Engineer</title>
-  <desc id="desc">Animated control-plane graphic representing evidence retrieval, agent orchestration, and reliable production systems.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">Aman Kumar — AI and Full-Stack Engineer</title>
+  <desc id="desc">An animated industrial control plane turns observed signals into reasoning, verified evidence, and shipped systems.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061426"/><stop offset=".52" stop-color="#0a2440"/><stop offset="1" stop-color="#07111f"/></linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#35e0c1"/><stop offset="1" stop-color="#4d8dff"/></linearGradient>
-    <radialGradient id="glow"><stop stop-color="#35e0c1" stop-opacity=".28"/><stop offset="1" stop-color="#35e0c1" stop-opacity="0"/></radialGradient>
-    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#7da8c7" stroke-opacity=".09"/></pattern>
-    <clipPath id="frame"><rect x="1" y="1" width="898" height="338" rx="24"/></clipPath>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#030405"/>
+      <stop offset=".56" stop-color="#08090a"/>
+      <stop offset="1" stop-color="#111318"/>
+    </linearGradient>
+    <linearGradient id="vermilion" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#ff5f38"/>
+      <stop offset="1" stop-color="#ff8a4c"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ff5f38"/>
+      <stop offset=".48" stop-color="#d8ff4f"/>
+      <stop offset="1" stop-color="#7ea8ff"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop stop-color="#ff5f38" stop-opacity=".72"/>
+      <stop offset=".35" stop-color="#ff5f38" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ff5f38" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#f4f1e8" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <clipPath id="frame"><rect x="1" y="1" width="898" height="358" rx="10"/></clipPath>
     <style>
-      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
-      .trace{fill:none;stroke:#35e0c1;stroke-width:1.2;stroke-opacity:.52;stroke-dasharray:5 12}.trace2{fill:none;stroke:#4d8dff;stroke-width:1;stroke-opacity:.42;stroke-dasharray:2 10}
-      .node{fill:#071827;stroke:#35e0c1;stroke-width:1.3}.minor{fill:#4d8dff}.label{fill:#8ea9bd;font-size:11px;letter-spacing:1.7px}.value{fill:#eaf6ff}.muted{fill:#91aabc}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+      .white{fill:#f4f1e8}.muted{fill:#97999f}.acid{fill:#d8ff4f}.orange{fill:#ff5f38}.blue{fill:#7ea8ff}
+      .eyebrow{font-size:10px;font-weight:650;letter-spacing:2px}.micro{font-size:9px;letter-spacing:1.4px}.small{font-size:11px;letter-spacing:1px}
+      .wire{fill:none;stroke:#575a60;stroke-width:1}.live{fill:none;stroke:url(#signal);stroke-width:1.5;stroke-dasharray:6 10}
+      .module{fill:#08090a;stroke:#3c3e42}.module-live{fill:#0b0c0d;stroke:#d8ff4f;stroke-opacity:.8}
     </style>
   </defs>
+
   <g clip-path="url(#frame)">
-    <rect width="900" height="340" fill="url(#bg)"/>
-    <rect width="900" height="340" fill="url(#grid)"/>
-    <circle cx="715" cy="145" r="180" fill="url(#glow)" filter="url(#soft)"><animate attributeName="opacity" values=".45;.8;.45" dur="6s" repeatCount="indefinite"/></circle>
-    <path class="trace" d="M484 76C560 76 563 142 638 142S720 72 856 72"><animate attributeName="stroke-dashoffset" from="0" to="-68" dur="5s" repeatCount="indefinite"/></path>
-    <path class="trace2" d="M484 169C555 169 574 229 650 229S746 165 856 165"><animate attributeName="stroke-dashoffset" from="0" to="48" dur="4s" repeatCount="indefinite"/></path>
-    <path class="trace" d="M484 262C563 262 582 193 672 193S757 273 856 273"><animate attributeName="stroke-dashoffset" from="0" to="-68" dur="6s" repeatCount="indefinite"/></path>
-    <g class="mono">
-      <rect x="510" y="54" width="102" height="42" rx="8" class="node"/><text x="526" y="72" class="label">RETRIEVE</text><text x="526" y="87" class="value" font-size="10">dense + sparse</text>
-      <rect x="646" y="119" width="92" height="46" rx="8" class="node"/><text x="662" y="137" class="label">FUSE</text><text x="662" y="152" class="value" font-size="10">rank + rerank</text>
-      <rect x="688" y="206" width="104" height="46" rx="8" class="node"/><text x="704" y="224" class="label">CONTROL</text><text x="704" y="239" class="value" font-size="10">policy + audit</text>
-      <circle cx="830" cy="72" r="4" class="minor"><animate attributeName="r" values="3;6;3" dur="2.8s" repeatCount="indefinite"/></circle>
-      <circle cx="815" cy="165" r="4" fill="#35e0c1"><animate attributeName="opacity" values=".35;1;.35" dur="2.2s" repeatCount="indefinite"/></circle>
-      <circle cx="843" cy="273" r="4" class="minor"><animate attributeName="r" values="3;6;3" dur="3.2s" repeatCount="indefinite"/></circle>
-    </g>
-    <g transform="translate(52 60)">
-      <g class="mono"><circle cx="5" cy="5" r="5" fill="#35e0c1"/><text x="19" y="9" class="label">SYSTEM ONLINE · BENGALURU</text></g>
-      <text y="78" class="sans value" font-size="48" font-weight="760" letter-spacing="-1.6">AMAN KUMAR</text>
-      <text y="112" class="mono" fill="url(#accent)" font-size="18" font-weight="600" letter-spacing="2.5">AI SYSTEMS ENGINEER</text>
-      <text y="157" class="sans muted" font-size="16">Production LLMs · Evidence-first RAG</text>
-      <text y="183" class="sans muted" font-size="16">Self-adaptive agents · Distributed systems</text>
-      <g class="mono" transform="translate(0 224)">
-        <rect width="365" height="34" rx="17" fill="#0b1d30" stroke="#54738a" stroke-opacity=".55"/>
-        <text x="18" y="22" fill="#b7ccda" font-size="11" letter-spacing="1">BUILD → MEASURE → VERIFY → SHIP</text>
-        <rect x="335" y="13" width="9" height="9" rx="2" fill="#35e0c1"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></rect>
+    <rect width="900" height="360" fill="url(#background)"/>
+    <rect width="900" height="360" fill="url(#grid)"/>
+    <circle cx="715" cy="183" r="180" fill="url(#core)" filter="url(#blur)">
+      <animate attributeName="opacity" values=".35;.85;.35" dur="5.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect x="0" y="0" width="900" height="4" fill="#1b1d20"/>
+    <rect x="0" y="0" width="280" height="4" fill="url(#vermilion)">
+      <animate attributeName="width" values="180;520;180" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M487 28V329" stroke="#f4f1e8" stroke-opacity=".16"/>
+
+    <g transform="translate(44 38)">
+      <g class="mono eyebrow">
+        <rect width="7" height="7" class="acid"/>
+        <text x="17" y="8" class="acid">SYSTEM / ONLINE</text>
+        <text x="176" y="8" class="muted">BLR · 12.9716°N</text>
+      </g>
+
+      <text y="81" class="sans white" font-size="51" font-weight="760" letter-spacing="-2.2">AMAN KUMAR</text>
+      <text y="119" class="mono orange" font-size="17" font-weight="700" letter-spacing="2.2">AI + FULL-STACK ENGINEER</text>
+
+      <g transform="translate(0 158)">
+        <text class="sans white" font-size="20" font-weight="620">Not artificial intelligence.</text>
+        <text y="28" class="sans white" font-size="20" font-weight="620">Accountable intelligence.</text>
+        <text y="62" class="sans muted" font-size="13">Models · APIs · infrastructure · interfaces</text>
+      </g>
+
+      <g transform="translate(0 268)" class="mono">
+        <rect width="399" height="37" fill="#060708" stroke="#393b3f"/>
+        <text x="15" y="23" class="white small">BUILD → MEASURE → VERIFY → SHIP</text>
+        <rect x="369" y="14" width="9" height="9" class="acid">
+          <animate attributeName="opacity" values="1;.18;1" dur="1.3s" repeatCount="indefinite"/>
+        </rect>
       </g>
     </g>
-    <rect x="1" y="1" width="898" height="338" rx="24" fill="none" stroke="url(#accent)" stroke-opacity=".55"/>
+
+    <g transform="translate(515 34)" class="mono">
+      <text class="muted micro">DECISION PLANE / 04 STAGES</text>
+      <text x="320" class="acid micro">TRACE ACTIVE</text>
+
+      <path id="pathA" d="M28 83H136C170 83 172 133 206 133H304" class="live">
+        <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="3.2s" repeatCount="indefinite"/>
+      </path>
+      <path id="pathB" d="M28 209H119C163 209 165 163 207 163H304" class="live">
+        <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="3.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M75 99V193M255 99V193" class="wire" stroke-dasharray="3 8"/>
+
+      <g transform="translate(0 53)">
+        <rect width="116" height="47" class="module"/>
+        <text x="13" y="19" class="muted micro">01 / OBSERVE</text>
+        <text x="13" y="35" class="white" font-size="10">capture reality</text>
+        <rect x="104" y="8" width="4" height="4" class="orange"/>
+      </g>
+      <g transform="translate(198 103)">
+        <rect width="116" height="47" class="module"/>
+        <text x="13" y="19" class="muted micro">02 / REASON</text>
+        <text x="13" y="35" class="white" font-size="10">constrain action</text>
+        <rect x="104" y="8" width="4" height="4" class="blue"/>
+      </g>
+      <g transform="translate(0 180)">
+        <rect width="116" height="47" class="module"/>
+        <text x="13" y="19" class="muted micro">03 / VERIFY</text>
+        <text x="13" y="35" class="white" font-size="10">expose evidence</text>
+        <rect x="104" y="8" width="4" height="4" class="acid"/>
+      </g>
+      <g transform="translate(198 180)">
+        <rect width="116" height="47" class="module-live"/>
+        <text x="13" y="19" class="acid micro">04 / SHIP</text>
+        <text x="13" y="35" class="white" font-size="10">survive production</text>
+        <rect x="104" y="8" width="4" height="4" class="acid">
+          <animate attributeName="opacity" values="1;.15;1" dur="1.1s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <circle r="4" class="orange">
+        <animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#pathA"/></animateMotion>
+      </circle>
+      <circle r="4" class="acid">
+        <animateMotion dur="4.1s" repeatCount="indefinite"><mpath href="#pathB"/></animateMotion>
+      </circle>
+
+      <g transform="translate(0 267)">
+        <text class="muted micro">MODEL</text><rect x="56" y="-7" width="60" height="2" class="orange"/>
+        <text x="133" class="muted micro">BACKEND</text><rect x="208" y="-7" width="45" height="2" class="blue"/>
+        <text x="270" class="muted micro">OPS</text><rect x="306" y="-7" width="27" height="2" class="acid"/>
+      </g>
+    </g>
+
+    <text x="866" y="338" text-anchor="end" class="mono muted micro">PORTFOLIO BUILD / 2026.09</text>
+    <rect x="1" y="1" width="898" height="358" rx="10" fill="none" stroke="#5b5d61" stroke-opacity=".65"/>
   </g>
 </svg>

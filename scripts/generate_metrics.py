@@ -128,7 +128,7 @@ def generate(stats: dict) -> str:
     language_x = 450.0
     language_segments = []
     language_labels = []
-    palette = ["#35e0c1", "#4d8dff", "#b689ff", "#f5b942", "#ff7085"]
+    palette = ["#ff5f38", "#d8ff4f", "#7ea8ff", "#f4f1e8", "#8b7cff"]
     for index, (name, size, _) in enumerate(stats["languages"]):
         segment_width = 398 * size / total_language_bytes
         color = palette[index % len(palette)]
@@ -158,14 +158,14 @@ def generate(stats: dict) -> str:
         )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">Aman's rolling public GitHub activity</title><desc id="desc">Daily generated contribution, streak, repository, and language summary.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#0a2440"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#35e0c1"/><stop offset="1" stop-color="#4d8dff"/></linearGradient><clipPath id="chart"><rect x="450" y="52" width="398" height="94" rx="8"/></clipPath></defs>
-<style>.mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}.label{{font:600 10px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:1.5px;fill:#7fa2b9}}.number{{font:700 28px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#eff8ff}}.small{{font:11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#9cb3c2}}.grid{{stroke:#7290a6;stroke-opacity:.12}}</style>
-<rect x="1" y="1" width="898" height="248" rx="20" fill="url(#bg)" stroke="#2f6680"/>
-<path d="M420 26V224" stroke="#497086" stroke-opacity=".35"/>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030405"/><stop offset="1" stop-color="#111318"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff5f38"/><stop offset=".5" stop-color="#d8ff4f"/><stop offset="1" stop-color="#7ea8ff"/></linearGradient><clipPath id="chart"><rect x="450" y="52" width="398" height="94"/></clipPath></defs>
+<style>.mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}.label{{font:600 10px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:1.5px;fill:#97999f}}.number{{font:700 28px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#f4f1e8}}.small{{font:11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#b2b3b6}}.grid{{stroke:#f4f1e8;stroke-opacity:.09}}</style>
+<rect x="1" y="1" width="898" height="248" rx="10" fill="url(#bg)" stroke="#5b5d61"/>
+<path d="M420 26V224" stroke="#f4f1e8" stroke-opacity=".18"/>
 {''.join(card_markup)}
 <g clip-path="url(#chart)"><path d="M450 76H848M450 104H848M450 132H848" class="grid"/><polyline points="{points}" fill="none" stroke="url(#line)" stroke-width="2.3" stroke-linejoin="round"><animate attributeName="stroke-dasharray" values="0 1200;1200 0" dur="1.7s" fill="freeze"/></polyline></g>
 <text x="450" y="34" class="label">WEEKLY PUBLIC CONTRIBUTIONS · PEAK {peak}</text><text x="848" y="34" text-anchor="end" class="small">{stats['repositories']} source repositories</text>
-<g>{''.join(language_segments)}</g><rect x="450" y="176" width="398" height="8" rx="4" fill="none" stroke="#89a6b8" stroke-opacity=".35"/>
+<g>{''.join(language_segments)}</g><rect x="450" y="176" width="398" height="8" fill="none" stroke="#f4f1e8" stroke-opacity=".24"/>
 <text x="450" y="166" class="label">LANGUAGE FOOTPRINT · BY PUBLIC BYTES</text>{''.join(language_labels)}
 </svg>'''
 
