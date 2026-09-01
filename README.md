@@ -9,7 +9,9 @@
 [![Bengaluru](https://img.shields.io/badge/BASE-BENGALURU%2C%20INDIA-ff5f38?style=flat-square&labelColor=090909)](https://www.google.com/maps/place/Bengaluru)
 [![Résumé](https://img.shields.io/badge/R%C3%89SUM%C3%89-ONE--PAGE%20ATS-7ea8ff?style=flat-square&labelColor=090909)](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
 
-[**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**Résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329) · [**Email**](mailto:amankumr3254u@gmail.com) · [**X**](https://x.com/Aman1181)
+[**Recruiter quick-read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**Résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**GitHub**](https://github.com/ReaperXD67) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329) · [**Email**](mailto:amankumr3254u@gmail.com) · [**X**](https://x.com/Aman1181)
+
+**Fastest route:** open the recruiter quick-read above for the flagship systems, current availability, canonical résumé, and direct contact in one focused view.
 
 </div>
 
@@ -73,6 +75,7 @@ OPEN TO      AI engineering · full-stack roles · internships · contract build
 
 ```text
 PORTFOLIO  https://aman-kumar-ai-portfolio.vercel.app
+RECRUITER  https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter
 RÉSUMÉ     https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf
 EMAIL      amankumr3254u@gmail.com
 LINKEDIN   https://www.linkedin.com/in/aman-kumar-494601329
