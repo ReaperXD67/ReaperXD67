@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" role="img" aria-labelledby="title desc">
+  <title id="title">Aman Kumar selected engineering systems map</title>
+  <desc id="desc">Six projects connect model engineering, retrieval, controlled agents, platform infrastructure, and product interfaces through a live evidence bus.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030405"/><stop offset="1" stop-color="#101216"/></linearGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff5f38"/><stop offset=".52" stop-color="#d8ff4f"/><stop offset="1" stop-color="#7ea8ff"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#f4f1e8" stroke-opacity=".05"/></pattern>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.sans{font-family:Segoe UI,ui-sans-serif,system-ui,sans-serif}
+      .label{font-size:9px;font-weight:700;letter-spacing:1.4px;fill:#97999f}.name{font-size:17px;font-weight:700;fill:#f4f1e8}.detail{font-size:10px;fill:#a8aaae}.status{font-size:8px;font-weight:700;letter-spacing:1.2px;fill:#d8ff4f}
+      .wire{fill:none;stroke:#666970;stroke-width:1;stroke-opacity:.6}.live{fill:none;stroke:url(#trace);stroke-width:1.4;stroke-dasharray:6 10}
+      .module{fill:#08090a;stroke:#3c3e42}.verified{fill:#0a0b0c;stroke:#d8ff4f;stroke-opacity:.72}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="388" rx="8" fill="url(#bg)" stroke="#505258"/>
+  <rect x="1" y="1" width="898" height="388" rx="8" fill="url(#grid)"/>
+
+  <text x="28" y="31" class="mono label" fill="#ff5f38">SELECTED SYSTEMS / LIVE TRANSMISSION</text>
+  <text x="872" y="31" text-anchor="end" class="mono status">EVIDENCE BUS ACTIVE</text>
+
+  <path d="M450 67V337" class="wire" stroke-dasharray="2 9"/>
+  <path id="mainBus" d="M450 67V337" class="live"><animate attributeName="stroke-dashoffset" from="0" to="-64" dur="3.2s" repeatCount="indefinite"/></path>
+  <circle r="4" fill="#d8ff4f"><animateMotion dur="4.8s" repeatCount="indefinite"><mpath href="#mainBus"/></animateMotion></circle>
+
+  <path d="M410 100H336M490 100H564M410 195H336M490 195H564M410 290H336M490 290H564" class="wire"/>
+  <circle cx="450" cy="100" r="6" fill="#ff5f38"/><circle cx="450" cy="195" r="6" fill="#d8ff4f"/><circle cx="450" cy="290" r="6" fill="#7ea8ff"/>
+
+  <g transform="translate(28 62)">
+    <rect width="308" height="76" class="verified"/>
+    <text x="16" y="22" class="mono status">LIVE / WEBGL / PROFILE</text>
+    <text x="16" y="47" class="sans name">Aman Kumar Portfolio</text>
+    <text x="16" y="65" class="mono detail">DECISION LOOM + SYSTEMS KERNEL</text>
+  </g>
+  <g transform="translate(564 62)">
+    <rect width="308" height="76" class="verified"/>
+    <text x="16" y="22" class="mono status">LIVE / RETRIEVAL / EVAL</text>
+    <text x="16" y="47" class="sans name">AtlasLM</text>
+    <text x="16" y="65" class="mono detail">DENSE + SPARSE + RERANK + CITE</text>
+  </g>
+  <g transform="translate(28 157)">
+    <rect width="308" height="76" class="module"/>
+    <text x="16" y="22" class="mono label" fill="#ff5f38">MODEL / TRAINING / INFERENCE</text>
+    <text x="16" y="47" class="sans name">GPT Prototype</text>
+    <text x="16" y="65" class="mono detail">125M PARAMETERS / FIRST PRINCIPLES</text>
+  </g>
+  <g transform="translate(564 157)">
+    <rect width="308" height="76" class="module"/>
+    <text x="16" y="22" class="mono label" fill="#7ea8ff">CONTROL / POLICY / MEMORY</text>
+    <text x="16" y="47" class="sans name">Autonomous Personal Agent</text>
+    <text x="16" y="65" class="mono detail">APPROVAL + BUDGET + AUDIT</text>
+  </g>
+  <g transform="translate(28 252)">
+    <rect width="308" height="76" class="verified"/>
+    <text x="16" y="22" class="mono status">LIVE VPS / PAPER / SIGNED API</text>
+    <text x="16" y="47" class="sans name">KarixMC / MinePulse</text>
+    <text x="16" y="65" class="mono detail">GAME SERVER + COMMERCE BOUNDARY</text>
+  </g>
+  <g transform="translate(564 252)">
+    <rect width="308" height="76" class="verified"/>
+    <text x="16" y="22" class="mono status">LIVE / FINTECH / EXPLAINABLE</text>
+    <text x="16" y="47" class="sans name">Revive</text>
+    <text x="16" y="65" class="mono detail">CLASSIFY + ROUTE + PROVE</text>
+  </g>
+
+  <text x="28" y="366" class="mono label">MODEL</text><rect x="81" y="359" width="54" height="2" fill="#ff5f38"/>
+  <text x="163" y="366" class="mono label">RETRIEVAL</text><rect x="248" y="359" width="54" height="2" fill="#d8ff4f"/>
+  <text x="330" y="366" class="mono label">AGENT</text><rect x="383" y="359" width="54" height="2" fill="#7ea8ff"/>
+  <text x="465" y="366" class="mono label">PLATFORM</text><rect x="539" y="359" width="54" height="2" fill="#f4f1e8"/>
+  <text x="621" y="366" class="mono label">INTERFACE</text><rect x="705" y="359" width="54" height="2" fill="#ff5f38"/>
+  <text x="872" y="366" text-anchor="end" class="mono status">SOURCE LINKED</text>
+</svg>

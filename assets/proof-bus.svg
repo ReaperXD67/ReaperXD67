@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-labelledby="title desc">
+  <title id="title">Verified engineering signals</title>
+  <desc id="desc">A compact evidence bus showing a 125 million parameter model, four live systems, two resume modes, and a verified micro1 credential.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030405"/><stop offset="1" stop-color="#111318"/></linearGradient>
+    <linearGradient id="bus" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff5f38"/><stop offset=".48" stop-color="#d8ff4f"/><stop offset="1" stop-color="#7ea8ff"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#f4f1e8" stroke-opacity=".045"/></pattern>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.sans{font-family:Segoe UI,ui-sans-serif,system-ui,sans-serif}
+      .label{font-size:9px;font-weight:700;letter-spacing:1.5px;fill:#97999f}.value{font-size:29px;font-weight:760;fill:#f4f1e8}.detail{font-size:10px;fill:#a9aaae}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="188" rx="8" fill="url(#bg)" stroke="#505258"/>
+  <rect x="1" y="1" width="898" height="188" rx="8" fill="url(#grid)"/>
+  <text x="24" y="25" class="mono label" fill="#d8ff4f">VERIFIED BUILD SIGNALS</text>
+  <text x="876" y="25" text-anchor="end" class="mono label">PUBLIC / INSPECTABLE / 2026.09</text>
+
+  <g transform="translate(24 44)">
+    <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
+    <rect width="4" height="92" fill="#ff5f38"/>
+    <text x="17" y="22" class="mono label">MODEL CORE</text>
+    <text x="17" y="58" class="sans value">125M</text>
+    <text x="17" y="78" class="mono detail">TRANSFORMER / FROM SCRATCH</text>
+  </g>
+  <g transform="translate(242 44)">
+    <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
+    <rect width="4" height="92" fill="#d8ff4f"/>
+    <text x="17" y="22" class="mono label">LIVE SURFACES</text>
+    <text x="17" y="58" class="sans value">04</text>
+    <text x="17" y="78" class="mono detail">DEPLOYED / REACHABLE</text>
+  </g>
+  <g transform="translate(460 44)">
+    <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
+    <rect width="4" height="92" fill="#7ea8ff"/>
+    <text x="17" y="22" class="mono label">CAREER ARTIFACTS</text>
+    <text x="17" y="58" class="sans value">02</text>
+    <text x="17" y="78" class="mono detail">ATS + SYSTEMS DOSSIER</text>
+  </g>
+  <g transform="translate(678 44)">
+    <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
+    <rect width="4" height="92" fill="#f4f1e8"/>
+    <text x="17" y="22" class="mono label">CREDENTIAL</text>
+    <text x="17" y="58" class="sans value">micro1</text>
+    <text x="17" y="78" class="mono detail">AI / ML INTERVIEW PASSED</text>
+  </g>
+
+  <path id="proofLine" d="M24 160H876" fill="none" stroke="url(#bus)" stroke-width="2" stroke-dasharray="8 12">
+    <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <circle r="4" fill="#d8ff4f"><animateMotion dur="5.5s" repeatCount="indefinite"><mpath href="#proofLine"/></animateMotion></circle>
+  <text x="24" y="180" class="mono label">BUILD</text><text x="304" y="180" class="mono label">MEASURE</text><text x="586" y="180" class="mono label">VERIFY</text><text x="876" y="180" text-anchor="end" class="mono label" fill="#d8ff4f">SHIP</text>
+</svg>

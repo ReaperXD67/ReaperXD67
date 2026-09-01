@@ -7,10 +7,14 @@
 [![Portfolio](https://img.shields.io/website?url=https%3A%2F%2Faman-kumar-ai-portfolio.vercel.app&style=flat-square&label=PORTFOLIO&up_message=ENTER%20SYSTEM&down_message=OFFLINE&color=d8ff4f&labelColor=090909)](https://aman-kumar-ai-portfolio.vercel.app)
 [![Available](https://img.shields.io/badge/AVAILABLE-AI%20%2F%20FULL--STACK%20BUILDS-d8ff4f?style=flat-square&labelColor=090909)](mailto:amankumr3254u@gmail.com)
 [![Bengaluru](https://img.shields.io/badge/BASE-BENGALURU%2C%20INDIA-ff5f38?style=flat-square&labelColor=090909)](https://www.google.com/maps/place/Bengaluru)
+[![Portfolio CI](https://github.com/ReaperXD67/aman-kumar-ai-portfolio/actions/workflows/verify.yml/badge.svg)](https://github.com/ReaperXD67/aman-kumar-ai-portfolio/actions/workflows/verify.yml)
+[![Profile telemetry](https://github.com/ReaperXD67/ReaperXD67/actions/workflows/profile-metrics.yml/badge.svg)](https://github.com/ReaperXD67/ReaperXD67/actions/workflows/profile-metrics.yml)
 
-[**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**Résumé PDF**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329) · [**Email**](mailto:amankumr3254u@gmail.com) · [**X / Twitter**](https://x.com/Aman1181)
+[**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**ATS Résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**Systems Dossier**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-systems-dossier.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329) · [**Email**](mailto:amankumr3254u@gmail.com) · [**X**](https://x.com/Aman1181)
 
 </div>
+
+![Verified engineering signals: 125M model, four live systems, two resume modes, and micro1 credential](./assets/proof-bus.svg)
 
 ## `> identity --verify`
 
@@ -21,6 +25,8 @@ I am an **AI Engineer & Full-Stack Developer** working across model behavior, ba
 | Answers expose the passages and retrieval decisions behind them. | Agents earn freedom through approvals, budgets, audit trails, and safe failure modes. | Products include queues, security boundaries, deployment, operations, and the last 10% of UX. |
 
 ## Selected systems / inspect the proof
+
+![Selected systems connected through a live evidence bus](./assets/systems-map.svg)
 
 | System | Engineering boundary | Proof |
 |---|---|---|
@@ -51,7 +57,13 @@ EDUCATION    B.Sc. Computer Science · Scaler School of Technology × BITS Pilan
 OPEN TO      AI engineering · full-stack roles · internships · contract builds
 ```
 
-[Résumé](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [micro1 AI/ML certification](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
+[ATS résumé](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [Cinematic systems dossier](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-systems-dossier.pdf) · [micro1 AI/ML certification](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
+
+## Career artifacts / choose the inspection mode
+
+| Recruiter mode | Systems mode | Verified credential |
+|---|---|---|
+| **[ATS Résumé](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)** - one-page, machine-readable, application-ready. | **[Accountable Intelligence Dossier](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-systems-dossier.pdf)** - two-page visual evidence map. | **[micro1 AI / ML Developer](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)** - interview passed, Mar 2026. |
 
 ## Engineering surface
 
@@ -85,6 +97,7 @@ If you are building an AI product with real constraints, a backend that needs to
 
 ```text
 PORTFOLIO  https://aman-kumar-ai-portfolio.vercel.app
+DOSSIER    https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-systems-dossier.pdf
 EMAIL      amankumr3254u@gmail.com
 LINKEDIN   https://www.linkedin.com/in/aman-kumar-494601329
 X          https://x.com/Aman1181
