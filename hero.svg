@@ -28,7 +28,7 @@
     <clipPath id="frame"><rect x="1" y="1" width="898" height="358" rx="10"/></clipPath>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+      .sans{font-family:Segoe UI,ui-sans-serif,system-ui,-apple-system,sans-serif}
       .white{fill:#f4f1e8}.muted{fill:#97999f}.acid{fill:#d8ff4f}.orange{fill:#ff5f38}.blue{fill:#7ea8ff}
       .eyebrow{font-size:10px;font-weight:650;letter-spacing:2px}.micro{font-size:9px;letter-spacing:1.4px}.small{font-size:11px;letter-spacing:1px}
       .wire{fill:none;stroke:#575a60;stroke-width:1}.live{fill:none;stroke:url(#signal);stroke-width:1.5;stroke-dasharray:6 10}
