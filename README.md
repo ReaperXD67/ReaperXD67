@@ -21,11 +21,39 @@
 
 ![Autonomous Personal Agent, AtlasLM, and MinePulse connected through a verified engineering spine](./assets/systems-map.svg)
 
-| Flagship | What the repository proves | Inspect |
-|---|---|---|
-| **Autonomous Personal Agent** | A security-first agent control plane with transactional task/outbox state, worker leases, retries, dead letters, approvals, policies, audit trails, PostgreSQL/pgvector, Redis, Docker, and **62 passing tests**. | [Source](https://github.com/ReaperXD67/autonomous-personal-agent) · [CI](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml) |
-| **AtlasLM** | A live evidence-grounded RAG system with deterministic ingestion, hybrid dense + BM25 retrieval, RRF, reranking, MMR, abstention, citations, evaluation checks, and visible traces. | [Live](https://notebooklm-rag-five.vercel.app) · [Source](https://github.com/ReaperXD67/notebooklm-rag) · [Health](https://notebooklm-rag-five.vercel.app/api/health) |
-| **MinePulse / KarixMC** | A production VPS marketplace crossing a signed Paper-plugin boundary with PostgreSQL, Redis, HMAC authentication, replay protection, transactional ledgers, encrypted secrets, backups, and rollback runbooks. | [Live](https://karixmc.pl) · [Source](https://github.com/ReaperXD67/MinePulse) · [Plugin](https://karixmc.pl/plugin) |
+### 01 / Autonomous Personal Agent
+
+`AGENT CONTROL PLANE · LOCAL ALPHA`
+
+A security-first control plane with transactional task/outbox state, worker leases, retries, dead letters, explicit approvals, policy gates, audit trails, PostgreSQL/pgvector, Redis, and containerized workers.
+
+**Proof surface:** 62 passing tests · durable execution · human approval boundary · failure recovery
+
+[Open source](https://github.com/ReaperXD67/autonomous-personal-agent) · [Inspect CI](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml)
+
+---
+
+### 02 / AtlasLM
+
+`EVIDENCE-GROUNDED RAG · LIVE`
+
+An inspectable document-intelligence system with deterministic ingestion, hybrid dense + BM25 retrieval, RRF fusion, reranking, MMR, abstention, citations, evaluation checks, and visible traces.
+
+**Proof surface:** live retrieval · citation audit · observable execution · health endpoint
+
+[Open live system](https://notebooklm-rag-five.vercel.app) · [Open source](https://github.com/ReaperXD67/notebooklm-rag) · [Check health](https://notebooklm-rag-five.vercel.app/api/health)
+
+---
+
+### 03 / MinePulse / KarixMC
+
+`DISTRIBUTED MARKETPLACE · PRODUCTION VPS`
+
+A production Minecraft reward marketplace crossing a signed Paper-plugin trust boundary with PostgreSQL, Redis, HMAC authentication, replay protection, transactional ledgers, encrypted secrets, recurring backups, and rollback runbooks.
+
+**Proof surface:** live VPS · signed game traffic · two app replicas behind Nginx · encrypted backups
+
+[Open production](https://karixmc.pl) · [Open source](https://github.com/ReaperXD67/MinePulse) · [Inspect plugin boundary](https://karixmc.pl/plugin)
 
 <details>
 <summary><strong>Why these three</strong></summary>
