@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-labelledby="title desc">
   <title id="title">Verified engineering signals</title>
-  <desc id="desc">A compact evidence bus showing a 125 million parameter model, four live systems, two resume modes, and a verified micro1 credential.</desc>
+  <desc id="desc">A compact evidence bus showing verified agent controls, live retrieval infrastructure, a production VPS system, and a micro1 credential.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030405"/><stop offset="1" stop-color="#111318"/></linearGradient>
     <linearGradient id="bus" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff5f38"/><stop offset=".48" stop-color="#d8ff4f"/><stop offset="1" stop-color="#7ea8ff"/></linearGradient>
@@ -18,23 +18,23 @@
   <g transform="translate(24 44)">
     <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
     <rect width="4" height="92" fill="#ff5f38"/>
-    <text x="17" y="22" class="mono label">MODEL CORE</text>
-    <text x="17" y="58" class="sans value">125M</text>
-    <text x="17" y="78" class="mono detail">TRANSFORMER / FROM SCRATCH</text>
+    <text x="17" y="22" class="mono label">AGENT CONTROL</text>
+    <text x="17" y="58" class="sans value">62</text>
+    <text x="17" y="78" class="mono detail">TESTS / POLICY / AUDIT</text>
   </g>
   <g transform="translate(242 44)">
     <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
     <rect width="4" height="92" fill="#d8ff4f"/>
-    <text x="17" y="22" class="mono label">LIVE SURFACES</text>
-    <text x="17" y="58" class="sans value">04</text>
-    <text x="17" y="78" class="mono detail">DEPLOYED / REACHABLE</text>
+    <text x="17" y="22" class="mono label">RETRIEVAL</text>
+    <text x="17" y="58" class="sans value">LIVE</text>
+    <text x="17" y="78" class="mono detail">HYBRID / RERANK / CITE</text>
   </g>
   <g transform="translate(460 44)">
     <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
     <rect width="4" height="92" fill="#7ea8ff"/>
-    <text x="17" y="22" class="mono label">CAREER ARTIFACTS</text>
-    <text x="17" y="58" class="sans value">02</text>
-    <text x="17" y="78" class="mono detail">ATS + SYSTEMS DOSSIER</text>
+    <text x="17" y="22" class="mono label">PRODUCTION</text>
+    <text x="17" y="58" class="sans value">VPS</text>
+    <text x="17" y="78" class="mono detail">PAPER / HMAC / POSTGRES</text>
   </g>
   <g transform="translate(678 44)">
     <rect width="198" height="92" fill="#08090a" stroke="#393b3f"/>
