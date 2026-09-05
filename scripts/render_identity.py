@@ -61,7 +61,7 @@ def base():
     return canvas
 
 
-def render(source):
+def render(source, review=False):
     ASSETS.mkdir(exist_ok=True)
     portrait = Image.open(source).convert("RGB")
     # The approved source is square: preserve its entire framing and appearance.
@@ -109,8 +109,9 @@ def render(source):
     # Intentionally omit the loop extension: a single <2.5s pass settles to a still.
     quantized[0].save(ASSETS / "identity-scan.gif", save_all=True, append_images=quantized[1:],
                       duration=[50] * 43 + [100], disposal=1, optimize=True)
-    for index in (0, 16, 31):
-        frames[index].save(ASSETS / f"identity-review-{index:02}.png", optimize=True)
+    if review:
+        for index in (0, 16, 31):
+            frames[index].save(ASSETS / f"identity-review-{index:02}.png", optimize=True)
     print(f"Rendered {len(frames)} frames; finite 2250ms reveal; {W}x{H}.")
     print(f"GIF: {(ASSETS / 'identity-scan.gif').stat().st_size:,} bytes")
 
@@ -118,4 +119,6 @@ def render(source):
 if __name__ == "__main__":
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("--portrait", required=True, type=Path)
-    render(parser.parse_args().portrait)
+    parser.add_argument("--review", action="store_true", help="Also emit three intermediate review frames.")
+    args = parser.parse_args()
+    render(args.portrait, args.review)
