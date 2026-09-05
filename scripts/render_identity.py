@@ -67,6 +67,9 @@ def render(source):
     # The approved source is square: preserve its entire framing and appearance.
     if portrait.width != portrait.height:
         raise ValueError("Use the approved square portrait to avoid an unintended crop.")
+    portrait.resize((800, 800), Image.Resampling.LANCZOS).save(
+        ASSETS / "aman-kumar-avatar.jpg", quality=95, subsampling=0, optimize=True
+    )
     portrait = portrait.resize((PHOTO_SIZE, PHOTO_SIZE), Image.Resampling.LANCZOS)
     mosaic = portrait.resize((18, 18), Image.Resampling.BOX).resize(portrait.size, Image.Resampling.NEAREST)
     rng = Random(67)
