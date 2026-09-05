@@ -1,25 +1,30 @@
 <div align="center">
 
-![Aman Kumar - AI and Full-Stack Engineer](./hero.svg)
+<a href="https://aman-kumar-ai-portfolio.vercel.app">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/identity-still.png">
+    <img src="./assets/identity-scan.gif" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer, Bengaluru. A brief pixel scan resolves into Aman's portrait. Accountable intelligence. Reliable systems. Visible proof.">
+  </picture>
+</a>
 
-### I build AI systems that can explain their decisions, survive failure, and operate beyond the demo.
+### AI Engineer & Full-Stack Developer
+
+**Project Lead Developer Intern at SIP Organization · Previously AI Engineer Intern at micro1**
+
+I build practical AI products across model behavior, retrieval, backend services, and the infrastructure that keeps them running.
 
 [![Portfolio](https://img.shields.io/website?url=https%3A%2F%2Faman-kumar-ai-portfolio.vercel.app&style=flat-square&label=PORTFOLIO&up_message=ENTER%20SYSTEM&down_message=OFFLINE&color=d8ff4f&labelColor=090909)](https://aman-kumar-ai-portfolio.vercel.app)
 [![Available](https://img.shields.io/badge/AVAILABLE-AI%20%2F%20FULL--STACK%20ROLES-d8ff4f?style=flat-square&labelColor=090909)](mailto:amankumr3254u@gmail.com)
-[![Bengaluru](https://img.shields.io/badge/BASE-BENGALURU%2C%20INDIA-ff5f38?style=flat-square&labelColor=090909)](https://www.google.com/maps/place/Bengaluru)
-[![Résumé](https://img.shields.io/badge/R%C3%89SUM%C3%89-ONE--PAGE%20ATS-7ea8ff?style=flat-square&labelColor=090909)](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
 
-[**Recruiter quick-read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**Résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**GitHub**](https://github.com/ReaperXD67) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329) · [**Email**](mailto:amankumr3254u@gmail.com) · [**X**](https://x.com/Aman1181)
+[**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**Recruiter quick-read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**Résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329) · [**Email**](mailto:amankumr3254u@gmail.com) · [**X**](https://x.com/Aman1181)
 
-**Fastest route:** open the recruiter quick-read above for the flagship systems, current availability, canonical résumé, and direct contact in one focused view.
+<sub>Bengaluru, India · Open to AI engineering, full-stack roles, internships, and contract work · [Still header](./assets/identity-still.png)</sub>
 
 </div>
 
-![Verified engineering signals: agent-control tests, live retrieval, production VPS, and micro1 credential](./assets/proof-bus.svg)
-
 ## Three systems worth opening
 
-![Autonomous Personal Agent, AtlasLM, and MinePulse connected through a verified engineering spine](./assets/systems-map.svg)
+Controlled agents. Inspectable retrieval. Production operations. Each project below exposes the implementation and the decisions behind it.
 
 ### 01 / Autonomous Personal Agent
 
@@ -66,18 +71,16 @@ A production Minecraft reward marketplace crossing a signed Paper-plugin trust b
 
 ## Operating context
 
-```text
-NOW          Project Lead Developer Intern · SIP Organization · Jul 2026 → Present
-BEFORE       AI Engineer Intern · micro1 · Aug 2025 → Jul 2026
-INDEPENDENT  AI / ML Developer · 2025 → Present
-EDUCATION    B.Sc. Computer Science · Scaler School of Technology × BITS Pilani
-OPEN TO      AI engineering · full-stack roles · internships · contract builds
-```
+- **SIP Organization — Project Lead Developer Intern** · Jul 2026–Present. AI-powered WhatsApp onboarding, conversational workflows, backend integrations, and service delivery.
+- **micro1 — AI Engineer Intern** · Aug 2025–Jul 2026. Worker orchestration and modular cell components for a self-adaptive AI architecture.
+- **Independent AI / ML Developer** · 2025–Present. Applied LLM products, automation, APIs, and reproducible training and inference workflows.
+- **B.Sc. Computer Science** · Scaler School of Technology with BITS Pilani · Aug 2024–Sep 2028.
 
 [One-page ATS résumé](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [micro1 AI/ML credential](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
 
 ## More systems
 
+- **[ROLLFORWARD](https://github.com/ReaperXD67/rollforward-optimistic-engine)** — an optimistic UI engine with durable intent, idempotent commands, explicit conflicts, and deterministic failure replay. 38 unit/integration tests and 7 browser journeys cover the contract. [Live failure path](https://rollforward-engine.onrender.com)
 - **[Revive](https://github.com/ReaperXD67/revive-ai)** - explainable payment-recovery orchestration with deterministic policies, immutable audit evidence, a live backend, 16 tests, and 95%+ core coverage. [Live](https://revive-revenue.vercel.app)
 - **[AtlasForge AI](https://github.com/ReaperXD67/atlasforge-ai)** - local-first AI video production pipeline with provider fallbacks, FFmpeg composition, checkpoints, cost controls, and 125 passing tests.
 - **[Distributed Search Typeahead](https://github.com/ReaperXD67/distributed-search-typeahead)** - FastAPI, PostgreSQL, Redis Streams, consistent hashing, write batching, failover, metrics, tests, and production smoke checks.
