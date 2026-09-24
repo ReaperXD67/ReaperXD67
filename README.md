@@ -13,9 +13,9 @@
 
 **Project Lead Developer Intern at SIP Organization · Former AI Engineer Intern at micro1**
 
-I turn AI ideas into inspectable software: **agents with permission boundaries, answers with evidence, and systems with a recovery path.**
+I build **AI applications, Python backends, and TypeScript interfaces**—with permission-bound agents, evidence-grounded retrieval, and workflows that recover from failure.
 
-[**Explore the portfolio →**](https://aman-kumar-ai-portfolio.vercel.app) · [**Recruiter quick read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**Download résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
+[**Explore the portfolio →**](https://aman-kumar-ai-portfolio.vercel.app) · [**Recruiter quick read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**One-page ATS résumé · PDF**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
 
 [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329) · [Email](mailto:amankumr3254u@gmail.com) · [X / Twitter](https://x.com/Aman1181)
 
@@ -25,10 +25,9 @@ I turn AI ideas into inspectable software: **agents with permission boundaries, 
 
 ## Selected engineering
 
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/architecture-atlas-mobile.svg">
-  <img src="./assets/architecture-atlas.svg" width="1000" alt="Three engineering boundaries: Autonomous Personal Agent routes intent through policy and a durable outbox, with human approval and owned worker leases. AtlasLM fuses dense and BM25 retrieval and gates answers on evidence and citations. KarixMC authenticates Paper events with HMAC and records ledger changes and delivery receipts. Source links and limitations follow.">
-</picture>
+[**Inspect the agent control plane**](https://github.com/ReaperXD67/autonomous-personal-agent) · [**Try AtlasLM**](https://notebooklm-rag-five.vercel.app/workspace) · [**Explore KarixMC**](https://karixmc.pl)
+
+Three flagship builds. Each pairs an engineering decision with inspectable code and an honest scope.
 
 ### [Autonomous Personal Agent](https://github.com/ReaperXD67/autonomous-personal-agent) — control before autonomy
 
@@ -43,7 +42,7 @@ Built a self-hosted agent control plane where task, outbox, and audit state shar
 [Lifecycle decision](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/docs/decisions/ADR-0007-durable-execution-lifecycle.md) · [Approval + receipt implementation](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/services/control-api/app/action_store.py) · [CI evidence](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml)
 
 <details>
-<summary>Current boundary</summary>
+<summary>Agent scope & limitations</summary>
 
 Private local dashboard, career workflows, and isolated action adapters. External submissions and email remain exact-action approval-gated; broad browser autonomy is not enabled. Local fixture verification is not a claim of universal ATS compatibility. [Exact-action design](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/docs/decisions/ADR-0010-exact-external-actions.md).
 
@@ -62,7 +61,7 @@ Built a document-intelligence workbench with deterministic ingestion, dense + BM
 [Try the live workspace](https://notebooklm-rag-five.vercel.app/workspace) · [Inspect the pipeline](https://github.com/ReaperXD67/notebooklm-rag/blob/main/docs/RAG_ARCHITECTURE.md) · [Quality gates](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
 
 <details>
-<summary>Current boundary</summary>
+<summary>AtlasLM scope & limitations</summary>
 
 One source workspace at a time. The semantic cache is instance-local; a multi-instance service would need shared cache state. Qdrant serves the local path and Upstash Vector the serverless deployment. [Architecture and honest scope](https://github.com/ReaperXD67/notebooklm-rag#honest-scope).
 
@@ -79,9 +78,19 @@ Built and deployed a Minecraft marketplace connecting verified playtime, reward 
 [Explore KarixMC](https://karixmc.pl) · [Inspect the plugin](https://karixmc.pl/plugin) · [Security boundary](https://github.com/ReaperXD67/MinePulse/blob/main/SECURITY.md) · [Production runbook](https://github.com/ReaperXD67/MinePulse/blob/main/PRODUCTION_RUNBOOK.md)
 
 <details>
-<summary>Current boundary</summary>
+<summary>KarixMC scope & limitations</summary>
 
 Two application replicas behind Nginx, PostgreSQL, Redis, and recurring encrypted backups. Campaign-credit purchases are manually confirmed; automated payment checkout is not connected. Deployment is not a claim of customer scale. [Current implementation](https://github.com/ReaperXD67/MinePulse#plugin-api).
+
+</details>
+
+<details>
+<summary><strong>Compare the three architectures</strong></summary>
+
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/architecture-atlas-mobile.svg">
+  <img src="./assets/architecture-atlas.svg" width="1000" alt="Three engineering boundaries: Autonomous Personal Agent routes intent through policy and a durable outbox, with human approval and owned worker leases. AtlasLM fuses dense and BM25 retrieval and gates answers on evidence and citations. KarixMC authenticates Paper events with HMAC and records ledger changes and delivery receipts. These are simplified diagrams; the source links above contain the implementation and limitations.">
+</picture>
 
 </details>
 
@@ -111,16 +120,13 @@ Two application replicas behind Nginx, PostgreSQL, Redis, and recurring encrypte
 
 Certified Freelance AI / Machine Learning Developer · micro1 · March 11, 2026. [View the supplied certificate](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg).
 
-<details>
-<summary><strong>Working stack</strong></summary>
+## Working stack
 
 **AI:** LLM applications, agent workflows, RAG, hybrid retrieval, evaluation, citations, PyTorch, OpenRouter.
 
 **Application:** Python, TypeScript, FastAPI, Next.js, React, Java, REST APIs, OAuth, signed webhooks.
 
 **Data + delivery:** PostgreSQL, pgvector, Redis, Qdrant, Upstash Vector, Prisma, Docker, Linux, Nginx, GitHub Actions, Vercel, VPS.
-
-</details>
 
 <details>
 <summary><strong>Public build activity</strong></summary>
@@ -133,8 +139,8 @@ Generated daily from public GitHub data. Activity is context, not a substitute f
 
 ---
 
-**Have a system worth building?** [Tell me the problem.](mailto:amankumr3254u@gmail.com)
+**Hiring or planning a build?** [Email me](mailto:amankumr3254u@gmail.com) with the role or problem, what exists today, and your timeline. I’m open to AI engineering, backend/full-stack work, internships, and contract projects.
 
-[Portfolio](https://aman-kumar-ai-portfolio.vercel.app) · [Canonical résumé](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329)
+[Portfolio](https://aman-kumar-ai-portfolio.vercel.app) · [One-page ATS résumé · PDF](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329)
 
 <sub>[Static portrait header](./assets/identity-still.png) · [Evidence & asset notes](./PROFILE_EVIDENCE.md) · Workflow badges report GitHub status, not independent certification.</sub>

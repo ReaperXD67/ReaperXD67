@@ -55,3 +55,19 @@ Four small badges appear beside the work or credential they describe, rather tha
 GitHub's sidebar **Achievements** are platform-awarded events. README badges cannot award them. No artificial pull requests, stars, co-author records, or self-created awards were used in this refinement. See [GitHub's profile reference](https://docs.github.com/en/account-and-profile/reference/profile-reference) and [native workflow badge documentation](https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge).
 
 The three flagship repositories' current READMEs were checked again for lifecycle, retrieval, and plugin-boundary claims on September 24. None of these badges asserts customer scale, commercial outcomes, independent security certification, or universal ATS compatibility.
+
+## Reading path & link maintenance
+
+The first screen names the work Aman can do, the actual internship context, and the primary portfolio, recruiter, résumé, and contact routes. The canonical résumé link is labeled **One-page ATS résumé · PDF**; it is a photo-free, single-column document, not an alternate visual résumé. No claim of universal ATS acceptance is made.
+
+The flagship section starts with direct actions for the agent source, AtlasLM workspace, and KarixMC site. The architecture comparison remains available in a native disclosure after the three project explanations, so a large illustration no longer separates visitors from the first project links. Project-specific disclosure labels distinguish the three scope notes. Technical skills remain ordinary visible text instead of being hidden behind another click.
+
+Run the bounded, read-only destination audit with Node.js and an authenticated GitHub CLI:
+
+```sh
+node scripts/check_profile_links.mjs
+```
+
+On September 24, 2026, the README contained **35 unique HTTPS destinations**: 33 returned a successful HTTP response or resolved through GitHub's documented repository, content, or workflow APIs. LinkedIn and X were explicitly reserved for manual signed-in verification rather than treated as broken links or accessed through session extraction. No stale source or live-site URL was found. The checker also verifies the two linked README heading anchors.
+
+This checks destination availability, not full application behavior, uptime guarantees, current CI success, or the integrity of an external credential. It does not submit forms, edit remote accounts, or run against authenticated social pages. Results are a dated maintenance check, not a permanent uptime claim.
