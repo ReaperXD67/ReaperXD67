@@ -2,18 +2,20 @@
 
 <a href="https://aman-kumar-ai-portfolio.vercel.app">
   <picture>
+    <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="./assets/identity-mobile-still.png">
+    <source media="(max-width: 640px)" srcset="./assets/identity-mobile-scan.gif">
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/identity-still.png">
-    <img src="./assets/identity-scan.gif" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer, Bengaluru. A brief pixel scan resolves into Aman's real portrait. Accountable intelligence. Reliable systems. Visible proof.">
+    <img src="./assets/identity-scan.gif" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer. Intelligence, engineered. A brief pixel assembly resolves into Aman's September 2026 portrait; a static version is available below.">
   </picture>
 </a>
 
 ### AI Engineer & Full-Stack Developer
 
-**Building AI products at SIP Organization · Former AI Engineer Intern at micro1**
+**Project Lead Developer Intern at SIP Organization · Former AI Engineer Intern at micro1**
 
-I build the parts an impressive demo can hide: retrieval that exposes its evidence, agents that respect permission, and services that recover when things go wrong.
+I turn AI ideas into inspectable software: **agents with permission boundaries, answers with evidence, and systems with a recovery path.**
 
-[**Enter the portfolio →**](https://aman-kumar-ai-portfolio.vercel.app) · [**60-second recruiter view**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**Résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
+[**Explore the portfolio →**](https://aman-kumar-ai-portfolio.vercel.app) · [**Recruiter quick read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**Download résumé**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
 
 [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329) · [Email](mailto:amankumr3254u@gmail.com) · [X / Twitter](https://x.com/Aman1181)
 
@@ -21,7 +23,7 @@ I build the parts an impressive demo can hide: retrieval that exposes its eviden
 
 </div>
 
-## Built around the difficult part
+## Selected engineering
 
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/architecture-atlas-mobile.svg">
@@ -32,9 +34,11 @@ I build the parts an impressive demo can hide: retrieval that exposes its eviden
 
 **Local alpha · Python / FastAPI / PostgreSQL / Redis / Docker**
 
+[![Agent CI — live workflow status](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml) [![Agent repository license — MIT](https://img.shields.io/github/license/ReaperXD67/autonomous-personal-agent?label=Agent%20license&color=d8ff4f)](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/LICENSE)
+
 Built a self-hosted agent control plane where task, outbox, and audit state share a transaction. Worker leases, heartbeats, bounded retries, and dead letters make interrupted work recoverable. Exact-action approvals bind reviewed content to a digest; persisted receipts prevent replay of recorded side effects.
 
-**The decision:** refuse a stale worker's completion instead of trusting that only one process is still running.
+**The engineering choice:** reject a stale worker's completion rather than assume only one process is still running.
 
 [Lifecycle decision](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/docs/decisions/ADR-0007-durable-execution-lifecycle.md) · [Approval + receipt implementation](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/services/control-api/app/action_store.py) · [CI evidence](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml)
 
@@ -49,9 +53,11 @@ Private local dashboard, career workflows, and isolated action adapters. Externa
 
 **Live · Next.js / TypeScript / Qdrant / Upstash Vector / OpenRouter**
 
+[![AtlasLM quality gates — live workflow status](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
+
 Built a document-intelligence workbench with deterministic ingestion, dense + BM25 retrieval, reciprocal-rank fusion, reranking, and MMR diversity. The answer arrives with source passages, citation checks, and timed execution traces—not just generated prose.
 
-**The decision:** gate before generation and audit after it. Weak evidence can produce abstention instead of confident-looking text.
+**The engineering choice:** gate before generation and audit after it. Weak evidence can produce abstention instead of confident-looking text.
 
 [Try the live workspace](https://notebooklm-rag-five.vercel.app/workspace) · [Inspect the pipeline](https://github.com/ReaperXD67/notebooklm-rag/blob/main/docs/RAG_ARCHITECTURE.md) · [Quality gates](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
 
@@ -68,7 +74,7 @@ One source workspace at a time. The semantic cache is instance-local; a multi-in
 
 Built and deployed a Minecraft marketplace connecting verified playtime, reward ledgers, server stores, and a Paper plugin. Signed events cross the game/API boundary; expiring purchase claims and a plugin-side receipt journal handle delivery acknowledgements.
 
-**The decision:** calculate rewards on the server and remember delivered commands, so a lost acknowledgement need not repeat a recorded delivery.
+**The engineering choice:** calculate rewards on the server and remember delivered commands, so a lost acknowledgement need not repeat a recorded delivery.
 
 [Explore KarixMC](https://karixmc.pl) · [Inspect the plugin](https://karixmc.pl/plugin) · [Security boundary](https://github.com/ReaperXD67/MinePulse/blob/main/SECURITY.md) · [Production runbook](https://github.com/ReaperXD67/MinePulse/blob/main/PRODUCTION_RUNBOOK.md)
 
@@ -79,7 +85,7 @@ Two application replicas behind Nginx, PostgreSQL, Redis, and recurring encrypte
 
 </details>
 
-## Different problems. The same engineering instinct.
+## More places I have tested that instinct
 
 - **[ROLLFORWARD](https://rollforward-engine.onrender.com)** — optimistic UI under failure: separate projected state from confirmed truth, preserve intent in IndexedDB, retry with the same idempotency key, and make `412` conflicts explicit. [Source + decisions](https://github.com/ReaperXD67/rollforward-optimistic-engine/blob/main/DECISIONS.md)
 - **[Revive](https://revive-revenue.vercel.app)** — live payment-recovery prototype with deterministic policies, HMAC-verified webhooks, and immutable audit records. Its duplicate-suppression challenge exercises the hosted backend; payment outcomes are demo data, not real charges or measured merchant uplift. [Source](https://github.com/ReaperXD67/revive-ai)
@@ -93,13 +99,17 @@ Two application replicas behind Nginx, PostgreSQL, Redis, and recurring encrypte
 
 </details>
 
-## Where I have built
+## Experience & credentials
 
 - **SIP Organization · Project Lead Developer Intern · Jul 2026–Present** — AI-powered WhatsApp onboarding, conversational workflows, backend integrations, and service delivery.
 - **micro1 · AI Engineer Intern · Aug 2025–Jul 2026** — worker orchestration and modular cell components for a self-adaptive AI architecture.
 - **Independent AI / ML Developer · 2025–Present** — applied LLM products, automation, APIs, and training/inference workflows.
 
-**B.Sc. Computer Science**, Scaler School of Technology with BITS Pilani · Aug 2024–Sep 2028. [micro1 AI/ML credential](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
+**B.Sc. Computer Science**, Scaler School of Technology with BITS Pilani · Aug 2024–Sep 2028.
+
+[![micro1 — Certified AI / Machine Learning Developer](https://img.shields.io/badge/micro1-Certified%20AI%20%2F%20ML%20Developer-17191a?labelColor=17191a&color=d8ff4f)](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
+
+Certified Freelance AI / Machine Learning Developer · micro1 · March 11, 2026. [View the supplied certificate](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg).
 
 <details>
 <summary><strong>Working stack</strong></summary>
@@ -127,4 +137,4 @@ Generated daily from public GitHub data. Activity is context, not a substitute f
 
 [Portfolio](https://aman-kumar-ai-portfolio.vercel.app) · [Canonical résumé](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329)
 
-<sub>[Static portrait header](./assets/identity-still.png) · [How this profile is built](./PROFILE_EVIDENCE.md)</sub>
+<sub>[Static portrait header](./assets/identity-still.png) · [Evidence & asset notes](./PROFILE_EVIDENCE.md) · Workflow badges report GitHub status, not independent certification.</sub>
