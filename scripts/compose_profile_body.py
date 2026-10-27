@@ -101,8 +101,8 @@ Two application replicas behind Nginx, PostgreSQL, Redis and recurring encrypted
 
 </details>
 
-[**ROLLFORWARD → live**](https://rollforward-engine.onrender.com) · [decisions](https://github.com/ReaperXD67/rollforward-optimistic-engine/blob/main/DECISIONS.md)  
-[**Revive → live**](https://revive-revenue.vercel.app) · [source](https://github.com/ReaperXD67/revive-ai)  
+[**ROLLFORWARD → live**](https://rollforward-engine.onrender.com) · [decisions](https://github.com/ReaperXD67/rollforward-optimistic-engine/blob/main/DECISIONS.md)<br>
+[**Revive → live**](https://revive-revenue.vercel.app) · [source](https://github.com/ReaperXD67/revive-ai)<br>
 [**AtlasForge AI → source**](https://github.com/ReaperXD67/atlasforge-ai) · [architecture](https://github.com/ReaperXD67/atlasforge-ai/blob/main/ARCHITECTURE.md)
 
 <details>
@@ -123,14 +123,14 @@ Two application replicas behind Nginx, PostgreSQL, Redis and recurring encrypted
 <details>
 <summary>Full working stack</summary>
 
-**AI:** LLM applications, agent workflows, RAG, hybrid retrieval, evaluation, citations, PyTorch, OpenRouter.  
-**Application:** Python, TypeScript, FastAPI, Next.js, React, Java, REST APIs, OAuth, signed webhooks.  
+**AI:** LLM applications, agent workflows, RAG, hybrid retrieval, evaluation, citations, PyTorch, OpenRouter.<br>
+**Application:** Python, TypeScript, FastAPI, Next.js, React, Java, REST APIs, OAuth, signed webhooks.<br>
 **Data + delivery:** PostgreSQL, pgvector, Redis, Qdrant, Upstash Vector, Prisma, Docker, Linux, Nginx, GitHub Actions, Vercel, VPS.
 
 </details>
 
-**SIP Organization** · Project Lead Developer Intern · Jul 2026–Present  
-**micro1** · AI Engineer Intern · Aug 2025–Jul 2026  
+**SIP Organization** · Project Lead Developer Intern · Jul 2026–Present<br>
+**micro1** · AI Engineer Intern · Aug 2025–Jul 2026<br>
 **Independent AI / ML Developer** · 2025–Present
 
 <details>
@@ -157,7 +157,7 @@ Generated daily from public GitHub data. Activity is context, not a substitute f
 
 ---
 
-**Have a role or a hard engineering problem?** [Email Aman →](mailto:amankumr3254u@gmail.com)  
+**Have a role or a hard engineering problem?** [Email Aman →](mailto:amankumr3254u@gmail.com)<br>
 Open to AI engineering, full-stack roles, internships and contract builds. Bengaluru · any work mode.
 
 [**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**One-page ATS résumé · PDF**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329)
