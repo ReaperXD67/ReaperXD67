@@ -5,7 +5,7 @@
     <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="./assets/identity-mobile-still.png">
     <source media="(max-width: 640px)" srcset="./assets/identity-mobile-scan.gif">
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/identity-still.png">
-    <img src="./assets/identity-scan.gif" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer. Intelligence, engineered. A brief pixel assembly resolves into Aman's September 2026 portrait; a static version is available below.">
+    <img src="./assets/identity-scan.gif" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer, Bengaluru, India. Intelligence, engineered. Autonomy needs an audit trail. A finite signal and pixel assembly resolve into Aman's professional portrait; a static header is linked below.">
   </picture>
 </a>
 
@@ -13,7 +13,7 @@
 
 **Project Lead Developer Intern at SIP Organization · Former AI Engineer Intern at micro1**
 
-I build **AI applications, Python backends, and TypeScript interfaces**—with permission-bound agents, evidence-grounded retrieval, and workflows that recover from failure.
+I turn AI ideas into **systems you can inspect**: permission-bound agents, cited retrieval, Python backends, and TypeScript interfaces that make failure recoverable.
 
 [**Explore the portfolio →**](https://aman-kumar-ai-portfolio.vercel.app) · [**Recruiter quick read**](https://aman-kumar-ai-portfolio.vercel.app/?view=recruiter) · [**One-page ATS résumé · PDF**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf)
 
@@ -23,11 +23,13 @@ I build **AI applications, Python backends, and TypeScript interfaces**—with p
 
 </div>
 
-## Selected engineering
+## Choose a failure. Inspect the engineering.
 
-[**Inspect the agent control plane**](https://github.com/ReaperXD67/autonomous-personal-agent) · [**Try AtlasLM**](https://notebooklm-rag-five.vercel.app/workspace) · [**Explore KarixMC**](https://karixmc.pl)
+- **A worker outlives its lease.** [Autonomous Personal Agent → ownership + durable execution](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/docs/decisions/ADR-0007-durable-execution-lifecycle.md)
+- **A fluent answer has weak evidence.** [AtlasLM → hybrid retrieval + abstention](https://notebooklm-rag-five.vercel.app/workspace)
+- **A game command loses its acknowledgement.** [MinePulse / KarixMC → signed events + receipts](https://github.com/ReaperXD67/MinePulse/blob/main/SECURITY.md)
 
-Three flagship builds. Each pairs an engineering decision with inspectable code and an honest scope.
+Three flagship builds, with the trade-offs and implementation linked below.
 
 ### [Autonomous Personal Agent](https://github.com/ReaperXD67/autonomous-personal-agent) — control before autonomy
 
@@ -35,7 +37,7 @@ Three flagship builds. Each pairs an engineering decision with inspectable code 
 
 [![Agent CI — live workflow status](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml) [![Agent repository license — MIT](https://img.shields.io/github/license/ReaperXD67/autonomous-personal-agent?label=Agent%20license&color=d8ff4f)](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/LICENSE)
 
-Built a self-hosted agent control plane where task, outbox, and audit state share a transaction. Worker leases, heartbeats, bounded retries, and dead letters make interrupted work recoverable. Exact-action approvals bind reviewed content to a digest; persisted receipts prevent replay of recorded side effects.
+Built a self-hosted agent workspace where task, outbox, and audit state share a transaction. Owned leases, heartbeats, bounded retries, and dead letters recover interrupted work. Exact-action digests bind reviewed content to execution; durable receipts protect recorded side effects from replay.
 
 **The engineering choice:** reject a stale worker's completion rather than assume only one process is still running.
 
@@ -44,7 +46,7 @@ Built a self-hosted agent control plane where task, outbox, and audit state shar
 <details>
 <summary>Agent scope & limitations</summary>
 
-Private local dashboard, career workflows, and isolated action adapters. External submissions and email remain exact-action approval-gated; broad browser autonomy is not enabled. Local fixture verification is not a claim of universal ATS compatibility. [Exact-action design](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/docs/decisions/ADR-0010-exact-external-actions.md).
+Private single-operator dashboard, career workflows, and isolated adapters. Career Play can authorize bounded applications within an explicit, expiring scope; manually prepared actions retain exact-action review. External application proof and Gmail OAuth proof remain pending. The isolated ATS adapter is verified against a local fixture. [Current capability status](https://github.com/ReaperXD67/autonomous-personal-agent#implemented-now) · [Exact-action design](https://github.com/ReaperXD67/autonomous-personal-agent/blob/main/docs/decisions/ADR-0010-exact-external-actions.md).
 
 </details>
 
@@ -54,9 +56,9 @@ Private local dashboard, career workflows, and isolated action adapters. Externa
 
 [![AtlasLM quality gates — live workflow status](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
 
-Built a document-intelligence workbench with deterministic ingestion, dense + BM25 retrieval, reciprocal-rank fusion, reranking, and MMR diversity. The answer arrives with source passages, citation checks, and timed execution traces—not just generated prose.
+Built a document-intelligence workbench with deterministic ingestion, dense + BM25 retrieval, reciprocal-rank fusion, reranking, and MMR diversity. Answers expose source passages, citation checks, confidence signals, and timed execution traces.
 
-**The engineering choice:** gate before generation and audit after it. Weak evidence can produce abstention instead of confident-looking text.
+**The engineering choice:** gate before generation and audit after it. Weak evidence can stop the answer.
 
 [Try the live workspace](https://notebooklm-rag-five.vercel.app/workspace) · [Inspect the pipeline](https://github.com/ReaperXD67/notebooklm-rag/blob/main/docs/RAG_ARCHITECTURE.md) · [Quality gates](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
 
@@ -94,7 +96,7 @@ Two application replicas behind Nginx, PostgreSQL, Redis, and recurring encrypte
 
 </details>
 
-## More places I have tested that instinct
+## More engineering, different constraints
 
 - **[ROLLFORWARD](https://rollforward-engine.onrender.com)** — optimistic UI under failure: separate projected state from confirmed truth, preserve intent in IndexedDB, retry with the same idempotency key, and make `412` conflicts explicit. [Source + decisions](https://github.com/ReaperXD67/rollforward-optimistic-engine/blob/main/DECISIONS.md)
 - **[Revive](https://revive-revenue.vercel.app)** — live payment-recovery prototype with deterministic policies, HMAC-verified webhooks, and immutable audit records. Its duplicate-suppression challenge exercises the hosted backend; payment outcomes are demo data, not real charges or measured merchant uplift. [Source](https://github.com/ReaperXD67/revive-ai)

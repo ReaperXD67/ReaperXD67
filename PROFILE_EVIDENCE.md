@@ -20,14 +20,14 @@ Employment, education, and dates follow Aman's supplied résumé. No customer co
 
 ## Authored assets
 
-- `assets/identity-scan.gif`: Aman's approved September 24, 2026 portrait, composed without further retouching into a quiet 1280 × 480 editorial header. A finite top-to-bottom pixel reveal settles after 1.7 seconds instead of looping. `prefers-reduced-motion` selects `identity-still.png`.
+- `assets/identity-scan.gif`: Aman's approved October 27, 2026 yellow-kurta portrait, composed without further retouching into an authored 1280 × 520 editorial header. The single signal route and finite top-to-bottom pixel reveal settle after 1.7 seconds. `prefers-reduced-motion` selects `identity-still.png`.
 - `assets/identity-mobile-scan.gif`: a separately composed 700 × 890 portrait-first header. The source order gives small screens a legible vertical layout, and small screens with reduced motion get `identity-mobile-still.png` instead of a GIF. Both variants have the same complete text available in the ordinary Markdown and image description.
 - `assets/architecture-atlas.svg`: original static vector geometry at 1000 × 684. It distinguishes approval, retrieval-fusion, and signed-event boundaries.
 - `assets/architecture-atlas-mobile.svg`: deliberately recomposed 460 × 1052 version, not a shrinking desktop screenshot. The README's picture source selects it below 640px.
 - `assets/aman-kumar-avatar.jpg`: the approved square portrait exported for an account-avatar upload. Presence in this repository does not mean the account avatar has been changed.
-- `assets/fonts/space-grotesk-latin-wght-normal.woff2`: the open-source Space Grotesk face used to render the header. Its SIL Open Font License is included alongside it; the finished image has no external font dependency.
+- `assets/fonts/SpaceGrotesk.ttf`: the open-source variable Space Grotesk face used to render the header directly with Pillow. Its SIL Open Font License is included alongside it; the finished image has no external font dependency. The prior WOFF2 source is retained.
 
-Regenerate both identity compositions with Pillow and fontTools/Brotli installed:
+Regenerate both identity compositions with Pillow installed:
 
 ```sh
 python scripts/render_identity.py --portrait /path/to/approved-square-portrait.png
@@ -71,3 +71,17 @@ node scripts/check_profile_links.mjs
 On September 24, 2026, the README contained **35 unique HTTPS destinations**: 33 returned a successful HTTP response or resolved through GitHub's documented repository, content, or workflow APIs. LinkedIn and X were explicitly reserved for manual signed-in verification rather than treated as broken links or accessed through session extraction. No stale source or live-site URL was found. The checker also verifies the two linked README heading anchors.
 
 This checks destination availability, not full application behavior, uptime guarantees, current CI success, or the integrity of an external credential. It does not submit forms, edit remote accounts, or run against authenticated social pages. Results are a dated maintenance check, not a permanent uptime claim.
+
+## October 27, 2026 refinement
+
+The new profile reading path begins with three concrete failures and direct inspection routes: stale worker completion, unsupported generated answers, and lost game-delivery acknowledgement. The compact index is followed by the actual decisions, linked implementation, and native scope disclosures.
+
+The portrait master is Aman's supplied yellow-kurta photograph edited for a restrained charcoal background and professional lighting. Facial identity, hair, expression, and clothing are preserved. The header compositor resizes the approved square export and adds only layout and the finite entrance. Desktop GIF is 216,933 bytes; mobile GIF is 182,211 bytes. The photo is dithered once against a fixed palette to keep facial shading natural and motion assets small; static PNGs retain full RGB color. All core information also exists in ordinary Markdown.
+
+The Agent scope disclosure now reflects the current implementation: Career Play can authorize bounded automatic applications within an explicit expiring scope; manually prepared actions retain exact-action review. External application proof and Gmail OAuth proof are still pending. This supersedes the old blanket statement that every external submission needs an individual approval.
+
+The bounded destination audit resolved **34 of 36 unique HTTPS destinations** on October 27; LinkedIn and X remain manual signed-in checks. Repository content paths, active workflow definitions, and three README anchors resolved. This is availability evidence, not a new CI execution or whole-application test. An authenticated read-only GitHub query confirmed the six approved pins already appear in the required order.
+
+The original signal geometry and header were authored for this profile. Research compared Anurag Hazra, DenverCoder1, lowlighter, Sindre Sorhus, innng, and common profile component repositories. The visual direction uses their lessons in hierarchy, authored identity, disclosures, and proof routes; no third-party header illustration or code was copied. Full dated references live in the companion portfolio's `docs/github-research-2026-10-27.md`.
+
+The GitHub-rendered local README preview was visually inspected at 1280 px and 390 px. A 320 px check confirmed the final page width equals the viewport and all images load; the failure index uses ordinary flowing Markdown to stay readable at narrow widths. Reduced-motion emulation selected the mobile static PNG, and the checked preview reported zero console errors or warnings. Both GIF files omit the loop extension and settle after the finite entrance. This preview uses GitHub's Markdown renderer with a local stylesheet and does not certify every possible GitHub theme or device.
