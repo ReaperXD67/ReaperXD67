@@ -5,7 +5,10 @@ path=root/'README.md'
 original=path.read_text(encoding='utf8')
 boundary="GitHub's native contribution grid remains GitHub-controlled.</sub>"
 assert boundary in original, 'Expected genuine-calendar prefix boundary is missing.'
-prefix=original.split(boundary)[0]+boundary+'\n'
+heading='## The build trace.' if '## The build trace.' in original else '## A year, in motion.'
+start=original.index(heading)
+contributions=original[start:original.index(boundary,start)+len(boundary)].replace('## A year, in motion.','## The build trace.')
+prefix=original[:original.index('</div>')+len('</div>')]+'\n'
 
 def picture(name,alt):
     return f'''<picture>
@@ -164,5 +167,5 @@ Open to AI engineering, full-stack roles, internships and contract builds. Benga
 
 <sub>[Static header](./assets/identity-signal-still.png) · [Static mobile header](./assets/identity-signal-mobile-still.png) · [Static project films](./PROFILE_EVIDENCE.md#project-showcase-films) · [Evidence & provenance](./PROFILE_EVIDENCE.md). All project films are illustrative source explanations. Account avatars are unchanged.</sub>
 '''
-path.write_text((prefix+body).replace('  \n','<br>\n'),encoding='utf8')
+path.write_text((prefix+body+'\n\n'+contributions+'\n').replace('  \n','<br>\n'),encoding='utf8')
 print('Composed the complete visual-first profile body.')
