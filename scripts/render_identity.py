@@ -61,12 +61,14 @@ def base(mobile=False):
 def render_variant(portrait, mobile=False, review=False):
     composition, (px, py, size) = base(mobile)
     original_photo = portrait.resize((size, size), Image.Resampling.LANCZOS)
-    palette_source = composition.copy()
-    palette_source.paste(original_photo, (px, py))
-    palette = palette_source.quantize(colors=256, method=Image.Quantize.MEDIANCUT)
-    # Dither the portrait once, keeping the same pixels across every GIF frame.
-    # This preserves facial shading without frame-wide diffusion differences.
-    photo = original_photo.quantize(palette=palette, dither=Image.Dither.FLOYDSTEINBERG).convert("RGB")
+    # Allocate most colors to the photograph instead of the large black canvas.
+    # Reserve exact UI colors and neutral edge tones in the remaining 16 slots.
+    palette = original_photo.quantize(colors=240, method=Image.Quantize.MEDIANCUT)
+    ui_colors = [BG, FG, MUTED, LINE, ACID, "#181b1b", "#252929", "#464a48",
+                 "#606560", "#7a7e78", "#94988f", "#c9cec2", "#e3e7dc",
+                 "#687924", "#8ca635", "#b4d442"]
+    palette.putpalette(palette.getpalette()[:720] + [v for color in ui_colors for v in bytes.fromhex(color[1:])])
+    photo = original_photo
     coarse = photo.resize((16, 16), Image.Resampling.BOX).resize(photo.size, Image.Resampling.NEAREST)
     tile = 28
     count = (size + tile - 1) // tile
@@ -109,6 +111,10 @@ def render_variant(portrait, mobile=False, review=False):
     final = frames[-1].copy()
     final.paste(original_photo, (px, py))
     final.save(ASSETS / f"{prefix}-still.png", optimize=True)
+    # APNG keeps the portrait's full RGB shading, and loop=1 plays exactly once.
+    # PNG-only clients receive the complete portrait as the default image.
+    final.save(ASSETS / f"{prefix}-assembly.png", save_all=True, append_images=frames,
+               default_image=True, duration=[50] * len(frames), loop=1, disposal=0, blend=0, optimize=True)
     quantized = [frame.quantize(palette=palette, dither=Image.Dither.NONE) for frame in frames]
     # No NETSCAPE loop extension: the 1.7s reveal ends on the recognizable portrait.
     quantized[0].save(ASSETS / f"{prefix}-scan.gif", save_all=True, append_images=quantized[1:],
@@ -117,7 +123,7 @@ def render_variant(portrait, mobile=False, review=False):
         (ROOT / "output").mkdir(exist_ok=True)
         frames[14].save(ROOT / "output" / f"{prefix}-mid-reveal.png", optimize=True)
     print(f"{prefix}: {final.width}x{final.height}; finite 1700ms reveal; "
-          f"{(ASSETS / f'{prefix}-scan.gif').stat().st_size:,} bytes")
+          f"{(ASSETS / f'{prefix}-assembly.png').stat().st_size:,} APNG bytes")
 
 
 if __name__ == "__main__":

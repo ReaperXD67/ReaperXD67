@@ -3,9 +3,9 @@
 <a href="https://aman-kumar-ai-portfolio.vercel.app">
   <picture>
     <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="./assets/identity-mobile-still.png">
-    <source media="(max-width: 640px)" srcset="./assets/identity-mobile-scan.gif">
+    <source media="(max-width: 640px)" srcset="./assets/identity-mobile-assembly.png">
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/identity-still.png">
-    <img src="./assets/identity-scan.gif" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer, Bengaluru, India. Intelligence, engineered. Autonomy needs an audit trail. A finite signal and pixel assembly resolve into Aman's professional portrait; a static header is linked below.">
+    <img src="./assets/identity-assembly.png" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer, Bengaluru, India. Intelligence, engineered. Autonomy needs an audit trail. A finite signal and pixel assembly resolve into Aman's professional portrait; a static header is linked below.">
   </picture>
 </a>
 
