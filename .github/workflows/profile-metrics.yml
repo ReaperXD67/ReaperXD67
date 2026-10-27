@@ -1,4 +1,4 @@
-name: Refresh profile metrics
+name: Refresh contribution instruments
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: profile-metrics
@@ -14,10 +14,30 @@ concurrency:
 
 jobs:
   refresh:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Generate actual contribution snake and 3D skyline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: npm run activity
+
+      - name: Verify self-contained SVGs and calendar integrity
+        run: python3 scripts/verify_activity.py
 
       - name: Generate the public activity card
         env:
@@ -25,14 +45,17 @@ jobs:
           GH_LOGIN: ${{ github.repository_owner }}
         run: python3 scripts/generate_metrics.py
 
-      - name: Commit only when the card changed
+      - name: Publish only changed generated instruments
         run: |
-          if git diff --quiet -- metrics.svg; then
+          if git diff --quiet -- metrics.svg assets/contribution-*.svg assets/contribution-data.json; then
             echo "No public activity change."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add metrics.svg
-          git commit -m "chore: refresh public profile metrics"
+          git add metrics.svg assets/contribution-*.svg assets/contribution-data.json
+          git commit -m "chore: refresh actual contribution instruments"
+          gh auth setup-git
           git push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

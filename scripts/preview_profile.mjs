@@ -17,4 +17,4 @@ createServer(async (req, res) => {
   if (!/^\/(?:assets\/[a-z0-9-]+\.(?:svg|png|gif|jpg)|metrics\.svg)$/.test(url.pathname)) { res.writeHead(404); res.end(); return; }
   try { const file = path.join(root, url.pathname); const bytes = await readFile(file); res.writeHead(200, { 'Content-Type': types[path.extname(file)] }); res.end(bytes); }
   catch { res.writeHead(404); res.end(); }
-}).listen(4287, '127.0.0.1', () => console.log('GitHub-rendered local preview: http://127.0.0.1:4287'));
+}).listen(Number(process.env.PORT || 4287), '127.0.0.1', () => console.log(`GitHub-rendered local preview: http://127.0.0.1:${process.env.PORT || 4287}`));
