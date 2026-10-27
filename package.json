@@ -5,6 +5,8 @@
   "scripts": {
     "activity": "node scripts/generate_activity.mjs",
     "verify:activity": "python scripts/verify_activity.py",
+    "showcases": "python scripts/render_project_showcases.py",
+    "verify:showcases": "python scripts/verify_showcases.py",
     "preview": "node scripts/preview_profile.mjs"
   },
   "dependencies": {

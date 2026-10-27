@@ -1,0 +1,44 @@
+{
+  "generated": "2026-10-27",
+  "author": "Original A.K. profile compositions",
+  "font": "Existing Space Grotesk, SIL OFL notice assets/fonts/SPACE-GROTESK-LICENSE.txt",
+  "captures": [
+    {
+      "source": "public/assets/atlaslm-landing.png",
+      "committed_input": "assets/captures/atlaslm-landing.png",
+      "source_sha256": "e29301dcdc3a88fdc630232a10a00d295e89dbdec9ec96e008bc401f5ec00d43",
+      "source_dimensions": [
+        1200,
+        760
+      ],
+      "embedded_encoding": "JPEG quality 88, 4:4:4, resized only",
+      "embedded_sha256": "74b164a9c2487e2d16d271f030fba2a8351870382d3e94316d4e899d578c9b16",
+      "embedded_dimensions": [
+        1100,
+        697
+      ],
+      "interpretation": "Existing real product capture; not a live session or current production telemetry."
+    },
+    {
+      "source": "public/assets/karixmc-live.png",
+      "committed_input": "assets/captures/karixmc-live.png",
+      "source_sha256": "c39a8d506f55920dd19485833c7ae614d94b9ea0876e251d2e3f7a44d64c0fc9",
+      "source_dimensions": [
+        1600,
+        1000
+      ],
+      "embedded_encoding": "JPEG quality 88, 4:4:4, resized only",
+      "embedded_sha256": "00c4fdb77ec2e769e041c99ec579feb0249a97b50fe0efa9c361a21e873d401e",
+      "embedded_dimensions": [
+        1100,
+        688
+      ],
+      "interpretation": "Existing real product capture; not a live session or current production telemetry."
+    }
+  ],
+  "motion": "Source explanations, not current runtime traces or measured outcomes.",
+  "requirements": {
+    "Pillow": "13.0.0",
+    "fonttools": "4.60.1"
+  }
+}

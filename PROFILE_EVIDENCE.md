@@ -1,6 +1,45 @@
 # Profile evidence and implementation
 
-This profile is a curated reading path, not a dashboard or a claim of production scale. The diagrams are intentionally simplified; implementation links in the README are the source of truth.
+This profile is a visual reading path with real project captures and authored system films. Motion explains implementation boundaries; it does not report a running test, live production telemetry or measured commercial outcomes. Source links and scope notes remain ordinary Markdown.
+
+## Project showcase films
+
+The October 27 body redesign replaces long default-visible project paragraphs with five full-width visual compositions. The header, genuine contribution snake and optional skyline remain unchanged.
+
+- **Autonomous Personal Agent:** orange owned-execution timeline and stale-completion boundary. It is explicitly labeled **Local alpha / architecture study**, not a real interface capture. Ordinary Markdown links to the actual lifecycle and action-store implementation. External application proof remains pending; the stale blanket clause about pending Gmail proof was removed after current source review, without introducing a broader email-delivery claim.
+- **AtlasLM:** a real landing-page capture beside an original dense/BM25 candidate convergence study. The simplified path retains RRF, reranking and a sufficiency gate before generation and citation audit; the source architecture describes full ingestion and MMR behavior.
+- **MinePulse / KarixMC:** the real colorful site capture owns the visual stage, followed by a signed-event / server-side ledger / recorded-receipt bridge. Snapshot values in the capture belong to the recorded interface and are not presented as current telemetry or verified customer outcomes.
+- **Build index:** ROLLFORWARD, Revive and AtlasForge AI use a compact animated editorial index; direct live/source routes and honest prototype boundaries remain in Markdown.
+- **Capabilities:** a static typographic composition groups actual working tools without a score, popularity ranking or animated proficiency meters. Complete stack text remains in a disclosure; career roles and dates remain visible and unchanged.
+
+The choreography moves emphasis across complete mechanism states: Agent transaction → lease → receipt/refusal boundary; AtlasLM candidate bands → fusion → sufficiency/citation gate; KarixMC HMAC/nonce → ledger → recorded-receipt return. Framed optical sweeps cross the real captures without replacing their content. Project names and stage labels remain visible throughout the twelve-second sequence. Each moving film sits in an open native disclosure with an explicit collapse action. Every composition has a separately laid-out narrow-screen version and zero-animation static version, selected with `picture` sources. Static exports omit complete moving-packet and optical-sweep elements, rather than leaving circles at the origin. Static project files: [Agent](./assets/showcase-agent-still.svg), [AtlasLM](./assets/showcase-atlaslm-still.svg), [KarixMC](./assets/showcase-karixmc-still.svg), [build index](./assets/showcase-build-index-still.svg), [capabilities](./assets/showcase-capabilities-still.svg). Their `-mobile-still.svg` companions are composed for phones rather than shrinking a desktop diagram.
+
+`scripts/render_project_showcases.py` uses Pillow only to resize/re-encode supplied project captures, and fontTools to outline the existing OFL Space Grotesk font. SVG playback needs neither fonts nor JavaScript, remote image servers, `foreignObject`, CSS injection or an installed animation runtime. The capture JPEGs are embedded as data URIs. `assets/showcase-provenance.json` records original file dimensions and SHA-256, embedded dimensions/encoding and SHA-256, font provenance and the distinction between a real capture and illustrative motion. The source assets are `public/assets/atlaslm-landing.png` and `public/assets/karixmc-live.png` in the companion portfolio. No project screenshot is synthesized or passed off as a new run.
+
+The two original owned capture inputs are committed under `assets/captures/`, so a standalone profile clone can regenerate the same output. Their original companion-portfolio paths and matching digests remain in the manifest. Regenerate from this repository:
+
+```sh
+python -m pip install -r requirements-showcases.txt
+npm run showcases
+npm run verify:showcases
+npm run preview
+```
+
+`scripts/compose_profile_body.py` is the source for this authored body composition; it retains the current hero/calendar prefix and writes the body idempotently. Ordinary content edits can also be made directly in `README.md`; synchronize the compositor if the body is regenerated. Committed outputs remain fully usable without Pillow/fontTools. No third-party playback runtime is installed in the published profile.
+
+The bounded validator parses all twenty SVGs, rejects executable and external runtime references, checks every embedded capture against its recorded digest and verifies that static variants contain no animation or moving-packet/sweep remnants. An isolated standalone-input test, without the companion `public/` directory, reproduced all twenty SVGs byte-for-byte. Local full-page desktop and 390 px inspection confirmed all five selected assets load, mobile uses all five recomposed variants, and native Space collapse works; a 320 px check found no page overflow or missing images. Selected desktop graphics total 1,119,408 bytes; mobile graphics total 1,054,417 bytes. All twenty variants total 4,337,812 bytes, with 821,208 bytes of original capture inputs. Live GitHub verification of embedded captures is a separate publication step, not implied by the local preview.
+
+### Primary body-animation references
+
+- [Wenoxxxx/svg-readme](https://github.com/Wenoxxxx/svg-readme): inspected the actual Project Showcase template and export architecture. Its template principle supports a visual body; this profile authors its own compositions and does not run or vendor that editor.
+- [ryanpolasky/ryme.md](https://github.com/ryanpolasky/ryme.md): inspected source documentation for per-section, self-contained SVG/CSS and deterministic raster export. No source or biography copied.
+- [ratacat/github-marquee](https://github.com/ratacat/github-marquee): inspected its examples and self-contained timeline guidance. The current project labels stay visible while only packets and short strokes move.
+- [charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea): actual README leads with a full-width product demonstration before tutorial prose. Applied the artifact-first hierarchy, without borrowing its branded media.
+- [charmbracelet/vhs](https://github.com/charmbracelet/vhs): inspected reproducible terminal demonstrations and their source tapes. This profile has no fabricated terminal output; the Agent plate is labeled an architecture study instead.
+- [nbedos/termtosvg](https://github.com/nbedos/termtosvg), [marionebl/svg-term-cli](https://github.com/marionebl/svg-term-cli): inspected script-free SVG recording approaches. termtosvg is archived; neither generator is installed or used here.
+- [GitHub diagram documentation](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) and [AtlasLM's actual retrieval diagram](https://github.com/ReaperXD67/notebooklm-rag/blob/main/docs/assets/readme/atlaslm-retrieval-flow.svg): checked native diagram constraints and source-faithful retrieval ordering.
+
+The deliverable is native repository SVG inside GitHub Markdown. HyperFrames' entry guidance was reviewed; its HTML/video runtime does not execute in this surface, so the implementation uses authored, self-contained SVG SMIL and explicit static outputs.
 
 ## Content checked on 2026-09-05
 
@@ -72,24 +111,17 @@ The existing daily refresh workflow now regenerates metrics and contribution ins
 
 Run the local GitHub Markdown preview with `npm run preview`; set `PORT` when a different local port is needed. The preview uses GitHub's renderer and does not publish changes.
 
-## Badge provenance — checked September 24, 2026
+## Source evidence, workflows & credentials
 
-Four small badges appear beside the work or credential they describe, rather than as a wall of unrelated logos:
+The current body uses direct CI/quality-gate, source, license and supplied-certificate links instead of repeating badge images. A link to a workflow does not claim it ran today or independently certifies the project. The Agent MIT license describes that repository only. The micro1 certificate is the supplied Freelance AI / Machine Learning Developer credential issued March 11, 2026.
 
-- **Autonomous Personal Agent CI:** GitHub's native workflow badge for `actions/workflows/ci.yml?branch=main`. At review, [run 35873161678](https://github.com/ReaperXD67/autonomous-personal-agent/actions/runs/35873161678) passed on September 23, 2026. The badge remains live and can change.
-- **AtlasLM RAG quality gates:** GitHub's native badge for `actions/workflows/quality.yml?branch=main`. At review, [run 31781510995](https://github.com/ReaperXD67/notebooklm-rag/actions/runs/31781510995) passed on August 14, 2026. This is the latest run, not a claim that checks ran today.
-- **Agent MIT license:** a dynamic Shields badge linked to that repository's actual `LICENSE` file. It describes that project only, not every repository on the profile.
-- **micro1 credential:** an informational badge linked to Aman's supplied certificate, issued March 11, 2026 for Freelance AI / Machine Learning Developer. Shields is only the image renderer; it does not independently verify credentials.
-
-GitHub's sidebar **Achievements** are platform-awarded events. README badges cannot award them. No artificial pull requests, stars, co-author records, or self-created awards were used in this refinement. See [GitHub's profile reference](https://docs.github.com/en/account-and-profile/reference/profile-reference) and [native workflow badge documentation](https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge).
-
-The three flagship repositories' current READMEs were checked again for lifecycle, retrieval, and plugin-boundary claims on September 24. None of these badges asserts customer scale, commercial outcomes, independent security certification, or universal ATS compatibility.
+GitHub's sidebar **Achievements** are platform-awarded events. README artwork cannot award them. No artificial pull requests, stars, co-author records or self-created awards were used. See [GitHub's profile reference](https://docs.github.com/en/account-and-profile/reference/profile-reference).
 
 ## Reading path & link maintenance
 
 The first screen names the work Aman can do, the actual internship context, and the primary portfolio, recruiter, résumé, and contact routes. The canonical résumé link is labeled **One-page ATS résumé · PDF**; it is a photo-free, single-column document, not an alternate visual résumé. No claim of universal ATS acceptance is made.
 
-The flagship section starts with direct actions for the agent source, AtlasLM workspace, and KarixMC site. The architecture comparison remains available in a native disclosure after the three project explanations, so a large illustration no longer separates visitors from the first project links. Project-specific disclosure labels distinguish the three scope notes. Technical skills remain ordinary visible text instead of being hidden behind another click.
+Each flagship film is followed immediately by the ordinary Markdown project name, honest status, one sentence and direct actions for live/source/decisions. Deep engineering and scope notes sit in clearly named native disclosures. The architecture comparison remains optional. Working-tool categories are visible in the static capability composition, with complete plain-text stack details in a disclosure. Employment roles and dates remain visible in ordinary Markdown.
 
 Run the bounded, read-only destination audit with Node.js and an authenticated GitHub CLI:
 
@@ -97,22 +129,22 @@ Run the bounded, read-only destination audit with Node.js and an authenticated G
 node scripts/check_profile_links.mjs
 ```
 
-On September 24, 2026, the README contained **35 unique HTTPS destinations**: 33 returned a successful HTTP response or resolved through GitHub's documented repository, content, or workflow APIs. LinkedIn and X were explicitly reserved for manual signed-in verification rather than treated as broken links or accessed through session extraction. No stale source or live-site URL was found. The checker also verifies the two linked README heading anchors.
+The current body audit on October 27, 2026 checked **34 unique HTTPS destinations**: 32 returned a successful HTTP response or resolved through GitHub's documented repository, content or workflow APIs. LinkedIn and X remain manual signed-in checks rather than being treated as broken links or accessed through session extraction. No stale source or live-site URL was found. Repository heading anchors are checked against their actual READMEs.
 
 This checks destination availability, not full application behavior, uptime guarantees, current CI success, or the integrity of an external credential. It does not submit forms, edit remote accounts, or run against authenticated social pages. Results are a dated maintenance check, not a permanent uptime claim.
 
 ## October 27, 2026 refinement
 
-The profile now opens with a continuously rotating Decision Loom, the recognizable supplied portrait and canonical recruiter actions, then the actual contribution snake. Optional skyline motion follows before the failure-led project evidence: stale worker completion, unsupported generated answers, and lost game-delivery acknowledgement. Repeated role and introduction paragraphs were compacted so the contribution field follows the hero immediately.
+The profile opens with a continuously rotating Decision Loom, the recognizable supplied portrait and canonical recruiter actions, then the actual contribution snake. Optional skyline motion follows before the source-linked project films described above. Repeated role and introduction paragraphs were compacted so the contribution field follows the hero immediately.
 
 The portrait master is Aman's supplied yellow-kurta photograph edited for a restrained charcoal background and professional lighting. Facial identity, hair, expression, and clothing are preserved. The current header compositor resizes the approved square export and adds only layout and procedural signal geometry. Desktop APNG is 2,599,367 bytes; mobile APNG is 2,635,361 bytes. Both retain full RGB color and loop every 4.68 seconds, with 52 timed frames and a complete default PNG image. Static versions and ordinary Markdown preserve the core information. The earlier finite entrance assets remain available as previous versions. Neither GitHub nor LinkedIn's account avatar is changed.
 
-The Agent scope disclosure now reflects the current implementation: Career Play can authorize bounded automatic applications within an explicit expiring scope; manually prepared actions retain exact-action review. External application proof and Gmail OAuth proof are still pending. This supersedes the old blanket statement that every external submission needs an individual approval.
+The Agent scope disclosure reflects the current implementation: Career Play can authorize bounded automatic applications within an explicit expiring scope; manually prepared actions retain exact-action review. External application proof remains pending. This supersedes the old blanket statement that every external submission needs an individual approval; the profile does not generalize the source's bounded owned-inbox email proof into a claim about creator-inbox placement.
 
-The bounded destination audit resolved **36 of 38 unique HTTPS destinations** on October 27; LinkedIn and X remain manual signed-in checks. Repository content paths, active workflow definitions, and README anchors resolved. This is availability evidence, not a whole-application test. An authenticated read-only GitHub query confirmed the six approved pins already appear in the required order.
+The current bounded destination audit resolved **32 of 34 unique HTTPS destinations** on October 27; LinkedIn and X remain manual signed-in checks. This is availability evidence, not a whole-application test. An earlier authenticated read-only GitHub query confirmed the six approved pins already appear in the required order; this body redesign does not change them.
 
 The original signal geometry and header were authored for this profile. Reusable contribution systems were inspected and the actual snake and skyline generators were integrated. The research matrix compares twelve primary sources, including Platane/snk, github-profile-3d-contrib, Arcade Contribution Graph Games, lowlighter/metrics, readme-typing-svg and capsule-render. Full dated references and integration decisions live in the companion portfolio's `docs/github-animation-research-2026-10-27.md`.
 
 The current GitHub-rendered local README preview was inspected at desktop, 768 px, 390 px and 320 px. At 390 and 320 px, document width equals viewport width, all images load and the mobile hero is selected. Keyboard Space toggles the native hero disclosure; the snake also collapses. The focused skyline renders its actual calendar geometry. The four contribution SVGs parse successfully, contain no executable content or external runtime assets, and their static versions contain no animation elements. The integrity check verifies 367 consecutive unique dates summing to the actual 536-contribution snapshot. Pillow confirms looping APNGs and single-frame static PNGs. Reduced-motion source declarations are present; this current iteration did not emulate an OS preference. The preview uses GitHub's Markdown renderer with a local stylesheet and does not certify every possible GitHub theme or device.
 
-Published as commit `61f96c59fd5f17915bbef92e8f198f86be1969ce`. A manual [refresh run](https://github.com/ReaperXD67/ReaperXD67/actions/runs/40532370338) succeeded on October 27: clean dependency installation, actual snake and skyline generation, SVG/data verification, public metrics generation and bot publication all passed. The generated refresh commit is `4a225fa`. The public GitHub profile was then checked for the new hero and contribution images, loaded assets and native disclosures. This confirms the shipped generation path rather than only a future scheduled promise.
+The hero/contribution iteration published as commit `61f96c59fd5f17915bbef92e8f198f86be1969ce`. Its manual [refresh run](https://github.com/ReaperXD67/ReaperXD67/actions/runs/40532370338) succeeded on October 27: clean dependency installation, actual snake and skyline generation, SVG/data verification, public metrics generation and bot publication all passed. The generated refresh commit is `4a225fa`. The public GitHub profile was checked for those new assets and disclosures. The later body redesign has its own review/publication verification and does not reuse that earlier run as evidence for its new graphics.
