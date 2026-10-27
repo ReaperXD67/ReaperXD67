@@ -30,7 +30,7 @@ jobs:
 
       - run: npm ci --ignore-scripts
 
-      - name: Generate actual contribution snake and 3D skyline
+      - name: Generate original loom, actual contribution snake and 3D skyline
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}

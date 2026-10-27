@@ -2576,6 +2576,7 @@
     }
   ],
   "generators": {
+    "loom": "original-contribution-loom@1",
     "snake": "generate-snake-animation@3.5.0",
     "skyline": "yoshi389111/github-profile-3d-contrib@e235d118909be71eb7edb05482a3de4e76156df3"
   }

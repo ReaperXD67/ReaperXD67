@@ -197,7 +197,21 @@ Open to AI engineering, full-stack roles, internships and contract builds. Benga
 ## The build trace.
 
 <details open>
-<summary><strong>Contribution snake — collapse to hide motion</strong></summary>
+<summary><strong>Contribution Loom · collapse to hide motion</strong></summary>
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="./assets/contribution-loom-mobile-still.svg">
+  <source media="(max-width: 640px)" srcset="./assets/contribution-loom-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/contribution-loom-still.svg">
+  <img src="./assets/contribution-loom.svg" width="1200" alt="Aman's original Contribution Loom braids his actual rolling GitHub calendar into seven weekday strands. Every fixed faceted cell represents a real date; logarithmic height and light encode that day's contribution count. The decorative light sweep changes neither cells nor activity. The complete data period, total and snapshot date are printed in the artwork. Activity is context, not a skill score.">
+</picture>
+
+</details>
+
+A real calendar, woven into seven weekday strands. Facet height follows daily activity; the traveling light is decorative. [Still artwork](./assets/contribution-loom-still.svg) · [Daily data](./assets/contribution-data.json) · [Original renderer](./scripts/render_contribution_loom.mjs)
+
+<details>
+<summary><strong>Optional · let the contribution snake traverse the same calendar</strong></summary>
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/contribution-calendar.svg">
@@ -207,7 +221,7 @@ Open to AI engineering, full-stack roles, internships and contract builds. Benga
 </details>
 
 <details>
-<summary><strong>Raise the same year into a 3D contribution skyline</strong></summary>
+<summary><strong>Optional · raise the same year into a 3D contribution skyline</strong></summary>
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/contribution-skyline-still.svg">
@@ -216,4 +230,4 @@ Open to AI engineering, full-stack roles, internships and contract builds. Benga
 
 </details>
 
-<sub>Real calendar data, refreshed daily. [Static calendar](./assets/contribution-calendar.svg) · [Snake generator](https://github.com/Platane/snk) · [3D generator](https://github.com/yoshi389111/github-profile-3d-contrib) · [Generation and provenance](./PROFILE_EVIDENCE.md#contribution-instruments). GitHub's native contribution grid remains GitHub-controlled.</sub>
+<sub>Real calendar data, refreshed daily. [Static calendar](./assets/contribution-calendar.svg) · [Snake generator](https://github.com/Platane/snk) · [3D generator](https://github.com/yoshi389111/github-profile-3d-contrib) · [Generation and provenance](./PROFILE_EVIDENCE.md#contribution-instruments). The Contribution Loom is original profile artwork. GitHub's native contribution grid remains GitHub-controlled.</sub>

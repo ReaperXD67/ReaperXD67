@@ -1,4 +1,4 @@
-/** Real GitHub calendar -> Platane/snk animation + yoshi389111 3D skyline.
+/** Real GitHub calendar -> original Contribution Loom + snk + 3D skyline.
  * Dependencies and upstream bundle are pinned. No synthetic contribution days.
  * Run with GITHUB_TOKEN in CI, or an already authenticated local GitHub CLI.
  */
@@ -8,6 +8,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { generateSnakeAnimation, getUserContribution } from 'generate-snake-animation';
+import { renderContributionLoom } from './render_contribution_loom.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const assets = path.join(root, 'assets');
@@ -31,7 +32,9 @@ const animated = String(snake).replace(/<svg\b([^>]*)>/, (_, attributes) => `<sv
 await writeFile(path.join(assets, 'contribution-snake.svg'), frame(animated, 'SNAKE / PLATANE'));
 const calendar = cells.map(cell => `<rect x="${45+cell.x*17.3}" y="${104+cell.y*17}" width="13" height="13" rx="2" fill="${colors[cell.level]}"><title>${cell.date}: ${cell.count} contributions</title></rect>`).join('');
 await writeFile(path.join(assets, 'contribution-calendar.svg'), frame(calendar, 'STATIC CALENDAR'));
-await writeFile(path.join(assets, 'contribution-data.json'), JSON.stringify({login, generated:date, total, first:cells[0].date, last:cells.at(-1).date, cells, generators:{snake:'generate-snake-animation@3.5.0',skyline:'yoshi389111/github-profile-3d-contrib@e235d118909be71eb7edb05482a3de4e76156df3'}}, null, 2)+'\n');
+const contributionData = {login, generated:date, total, first:cells[0].date, last:cells.at(-1).date, cells, generators:{loom:'original-contribution-loom@1',snake:'generate-snake-animation@3.5.0',skyline:'yoshi389111/github-profile-3d-contrib@e235d118909be71eb7edb05482a3de4e76156df3'}};
+await writeFile(path.join(assets, 'contribution-data.json'), JSON.stringify(contributionData, null, 2)+'\n');
+await renderContributionLoom(contributionData, assets);
 
 // Official MIT generator, fetched by immutable revision and content digest.
 // Only the generated SVG is published; the downloaded software stays ignored.
@@ -88,4 +91,4 @@ const skyline = focusedSkyline.replace(/<animate(?:Transform)?\b[^>]*>/g, tag =>
 if (/<script|<foreignObject|(?:href|src)=["']https?:/i.test(skyline)) throw new Error('Unexpected executable or remote asset in skyline output.');
 await writeFile(path.join(assets,'contribution-skyline.svg'),skyline);
 await writeFile(path.join(assets,'contribution-skyline-still.svg'),skyline.replace(/<animate(?:Transform)?\b[^>]*(?:\/>|>[\s\S]*?<\/animate(?:Transform)?>)/g,''));
-console.log(`Generated actual calendar: ${total} contributions, ${cells.length} days. Snake, static calendar and 3D skyline written.`);
+console.log(`Generated actual calendar: ${total} contributions, ${cells.length} days. Original loom, snake, static calendar and 3D skyline written.`);
