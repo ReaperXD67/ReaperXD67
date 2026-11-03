@@ -1,0 +1,29 @@
+{
+  "source": "assets/aman-kumar-avatar.jpg",
+  "portrait_sha256": "e1ad94e77854cf760199d89667111ccb8398a946047ea43754af30f6bc63ee0b",
+  "portrait_encoding": "Original JPEG bytes embedded unchanged",
+  "font": "Space Grotesk, SIL OFL; assets/fonts/SPACE-GROTESK-LICENSE.txt",
+  "animation": "Original self-contained SVG SMIL; 154 decorative grains; no runtime or external resource",
+  "variants": [
+    {
+      "file": "identity-portrait.svg",
+      "bytes": 554130,
+      "sha256": "20f7c7045ae6f1ff36442f136e088b7b171b4fb66f95e9b677a6aa764cef2335"
+    },
+    {
+      "file": "identity-portrait-still.svg",
+      "bytes": 498690,
+      "sha256": "9480f7eef6a5fd0e71d207da9b6d2a9485739813d3b5c202d7d50cc2e0ff199b"
+    },
+    {
+      "file": "identity-portrait-mobile.svg",
+      "bytes": 459733,
+      "sha256": "2ee3a0d44a428f756957752b3a3c52c8027fe2aa97a47442eac7b3272769cfef"
+    },
+    {
+      "file": "identity-portrait-mobile-still.svg",
+      "bytes": 405063,
+      "sha256": "ac7981f081b08d3502a1c7d84d403bd579146a85cfa8623feac0e5a394330fd5"
+    }
+  ]
+}

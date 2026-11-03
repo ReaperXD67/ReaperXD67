@@ -21,6 +21,16 @@ def picture(name,alt):
 body='''
 [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329) · [Email](mailto:amankumr3254u@gmail.com) · [X / Twitter](https://x.com/Aman1181)
 
+### Proof, one click away.
+
+[![Agent CI](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml)
+[![AtlasLM RAG quality gates](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
+[![Portfolio verification](https://github.com/ReaperXD67/aman-kumar-ai-portfolio/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/aman-kumar-ai-portfolio/actions/workflows/verify.yml)
+
+[![micro1 AI / Machine Learning credential — view the supplied certificate](./assets/credential-micro1.svg)](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
+
+<sub>Live build checks and the supplied micro1 credential. Open any badge to inspect its evidence.</sub>
+
 ## Systems you can inspect.
 
 Three flagship builds. Real interfaces, visible boundaries, source behind every decision.
@@ -165,7 +175,7 @@ Open to AI engineering, full-stack roles, internships and contract builds. Benga
 
 [**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**One-page ATS résumé · PDF**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329)
 
-<sub>[Static header](./assets/identity-signal-still.png) · [Static mobile header](./assets/identity-signal-mobile-still.png) · [Static project films](./PROFILE_EVIDENCE.md#project-showcase-films) · [Evidence & provenance](./PROFILE_EVIDENCE.md). All project films are illustrative source explanations. Account avatars are unchanged.</sub>
+<sub>[Static header](./assets/identity-portrait-still.svg) · [Static mobile header](./assets/identity-portrait-mobile-still.svg) · [Static project films](./PROFILE_EVIDENCE.md#project-showcase-films) · [Evidence & provenance](./PROFILE_EVIDENCE.md). All project films are illustrative source explanations. Account avatars are unchanged.</sub>
 '''
 path.write_text((prefix+body+'\n\n'+contributions+'\n').replace('  \n','<br>\n'),encoding='utf8')
 print('Composed the complete visual-first profile body.')

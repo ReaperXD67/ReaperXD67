@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "identity": "python scripts/render_portrait_identity.py",
+    "verify:identity": "python scripts/verify_identity.py",
     "activity": "node scripts/generate_activity.mjs",
     "verify:activity": "python scripts/verify_activity.py",
     "showcases": "python scripts/render_project_showcases.py",

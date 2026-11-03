@@ -1,14 +1,14 @@
 <div align="center">
 
 <details open>
-<summary><strong>Decision Loom — collapse to hide motion</strong></summary>
+<summary><strong>Meet Aman · portrait current · collapse to hide motion</strong></summary>
 
 <a href="https://aman-kumar-ai-portfolio.vercel.app">
   <picture>
-    <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="./assets/identity-signal-mobile-still.png">
-    <source media="(max-width: 640px)" srcset="./assets/identity-signal-mobile.png">
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/identity-signal-still.png">
-    <img src="./assets/identity-signal.png" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer in Bengaluru. A continuously turning, original three-dimensional Decision Loom sends a signal through its braided structure. Aman's unchanged professional portrait remains clear. Accountable intelligence. Building at SIP; former AI Engineer Intern at micro1. A static version is linked below.">
+    <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="./assets/identity-portrait-mobile-still.svg">
+    <source media="(max-width: 640px)" srcset="./assets/identity-portrait-mobile.svg">
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/identity-portrait-still.svg">
+    <img src="./assets/identity-portrait.svg" width="1000" alt="Aman Kumar — AI Engineer and Full-Stack Developer. A large, unchanged natural portrait meets an original flowing current carrying its charcoal and gold colours. Bengaluru; building at SIP; previously AI Engineer Intern at micro1. Face and role remain still and clear; decorative motion can be collapsed or viewed as a still.">
   </picture>
 </a>
 
@@ -21,6 +21,16 @@
 </div>
 
 [LinkedIn](https://www.linkedin.com/in/aman-kumar-494601329) · [Email](mailto:amankumr3254u@gmail.com) · [X / Twitter](https://x.com/Aman1181)
+
+### Proof, one click away.
+
+[![Agent CI](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/autonomous-personal-agent/actions/workflows/ci.yml)
+[![AtlasLM RAG quality gates](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/notebooklm-rag/actions/workflows/quality.yml)
+[![Portfolio verification](https://github.com/ReaperXD67/aman-kumar-ai-portfolio/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/ReaperXD67/aman-kumar-ai-portfolio/actions/workflows/verify.yml)
+
+[![micro1 AI / Machine Learning credential — view the supplied certificate](./assets/credential-micro1.svg)](https://aman-kumar-ai-portfolio.vercel.app/assets/micro1-certification.jpg)
+
+<sub>Live build checks and the supplied micro1 credential. Open any badge to inspect its evidence.</sub>
 
 ## Systems you can inspect.
 
@@ -191,7 +201,7 @@ Open to AI engineering, full-stack roles, internships and contract builds. Benga
 
 [**Portfolio**](https://aman-kumar-ai-portfolio.vercel.app) · [**One-page ATS résumé · PDF**](https://aman-kumar-ai-portfolio.vercel.app/profile/aman-kumar-resume.pdf) · [**LinkedIn**](https://www.linkedin.com/in/aman-kumar-494601329)
 
-<sub>[Static header](./assets/identity-signal-still.png) · [Static mobile header](./assets/identity-signal-mobile-still.png) · [Static project films](./PROFILE_EVIDENCE.md#project-showcase-films) · [Evidence & provenance](./PROFILE_EVIDENCE.md). All project films are illustrative source explanations. Account avatars are unchanged.</sub>
+<sub>[Static header](./assets/identity-portrait-still.svg) · [Static mobile header](./assets/identity-portrait-mobile-still.svg) · [Static project films](./PROFILE_EVIDENCE.md#project-showcase-films) · [Evidence & provenance](./PROFILE_EVIDENCE.md). All project films are illustrative source explanations. Account avatars are unchanged.</sub>
 
 
 ## The build trace.

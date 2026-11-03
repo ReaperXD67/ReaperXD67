@@ -2,6 +2,38 @@
 
 This profile is a visual reading path with real project captures and authored system films. Motion explains implementation boundaries; it does not report a running test, live production telemetry or measured commercial outcomes. Source links and scope notes remain ordinary Markdown.
 
+## Portrait-led identity and evidence marks
+
+The November 3 refinement makes the supplied portrait the first impression: oversized name, a large unchanged face, and an original charcoal/gold particle current sampled from the photo's right edge. The desktop and mobile compositions are separately authored. Only 154 vector grains move; neither the face nor important text moves. The native disclosure hides motion, and explicit zero-animation variants serve reduced-motion preferences. The original JPEG is embedded byte-for-byte in all four SVGs; its digest and asset sizes are recorded in [the provenance manifest](./assets/identity-portrait-provenance.json). No JavaScript, filters, remote images, third-party image service, playback package, or additional font request is used.
+
+The selected desktop header is 554,130 bytes, replacing the 2,599,367-byte APNG (78.7% smaller); the selected mobile header is 459,733 bytes, replacing 2,635,361 bytes (82.6% smaller). These are raw file sizes, not measured network latency or frame-rate claims. The existing flagship films and final contribution loom are retained.
+
+Three native GitHub Actions badges link to the actual main-branch Agent, AtlasLM and portfolio workflows. Their current status is supplied by GitHub rather than hard-coded as passing. The local micro1 mark links to Aman's supplied March 11, 2026 AI / Machine Learning certificate. It is explicitly a credential link, not an invented GitHub award or a skill score. GitHub's own native achievements remain governed by qualifying events; this work does not manufacture commits, discussions, pull requests, stars or endorsements to obtain them.
+
+```sh
+python -m pip install -r requirements-showcases.txt
+npm run identity
+npm run verify:identity
+npm run verify:showcases
+npm run verify:activity
+npm run preview
+```
+
+`scripts/verify_identity.py` verifies exact photo integrity, four referenced variants, static fallbacks, no executable/external runtime references, the 600KB per-header budget and evidence routes. `Verify profile assets` runs identity, showcase and calendar validation on affected pushes and pull requests; capture validation uses pinned Pillow. The body compositor retains this proof strip and the current header and regenerated the README byte-for-byte on November 3. Local identity, all twenty showcase variants and all eight contribution exports passed validation. The bounded README link audit found 36 successful destinations, two social destinations reserved for signed-in UI review, and no broken or unresolved destinations. A browser check of GitHub-rendered local Markdown at 1280 × 900 and 390 × 844 confirmed the embedded portrait, legible name/role and face-clear particle curve; the mobile page had no horizontal overflow. Live image-proxy rendering remains a publication check, separate from these local results.
+
+### Reference decisions — 2026-11-03
+
+| Primary source | Inspected revision / maintenance | License | Decision |
+| --- | --- | --- | --- |
+| [ryanpolasky/ryme.md](https://github.com/ryanpolasky/ryme.md) | `aede040201f5ed5168eb74c5e1fe319895b724ed`, Oct 29, active | MIT, copyright Ryan Polasky | Adapt the self-contained banner/export principle. Original geometry and typography here; no copied source or editor dependency. |
+| [Wenoxxxx/svg-readme](https://github.com/Wenoxxxx/svg-readme) | `4b784a8be57b2cbc8728b10dd7cb67982922bf86`, Nov 1, active | MIT, copyright Owen Jerusalem and Alistair Ybanez | Adapt authored layer composition. Avoid installing an editor merely to regenerate this fixed profile. |
+| [DenverCoder1/readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | `d78d72da0ea1a596e0cf0d70f12f2350c41ad9dc`, Oct 27, active; release v0.10.0 | MIT | Defer the PHP/service-backed typing widget: it adds another remote response and hides stable recruiter information while typing. |
+| [Platane/Platane](https://github.com/Platane/Platane) | `0f8105f2e01faa25ee4643eaae39cea2d8453279`, profile source Oct 17, 2023; generated output recently refreshed | No repository license reported | Inspiration only: a single coherent activity artwork; no source copied. Retain our original real-calendar Contribution Loom last. |
+| [GitHub workflow badge documentation](https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge) | Current documentation inspected Nov 3 | Documentation reference only | Adopt native main-branch workflow badge URLs; status stays honest as builds change. |
+| [GitHub profile reference](https://docs.github.com/en/account-and-profile/reference/profile-reference) | Current documentation inspected Nov 3 | Documentation reference only | Distinguish real native achievements/program badges from authored evidence marks; no badge farming. |
+
+No upstream code is incorporated by this refinement. The existing Space Grotesk font and its included SIL Open Font License remain the only typography source.
+
 ## Project showcase films
 
 The October 27 body redesign replaces long default-visible project paragraphs with five full-width visual compositions. The header and genuine contribution artwork remain intact. At Aman's subsequent request, the complete contribution section now appears **last**, after the recruiter close and static/evidence footer, under **The build trace.** The snake, optional skyline, native motion controls, static sources, daily data and provenance links are preserved. The first reading path now runs directly from personal introduction and professional actions into flagship work.
@@ -61,7 +93,7 @@ Employment, education, and dates follow Aman's supplied résumé. No customer co
 
 ## Authored assets
 
-The current hero is `assets/identity-signal.png`, with a separately composed mobile image and explicit static variants. An original, perspective-projected Decision Loom rotates continuously through a 4.68-second full-RGB APNG loop. The supplied portrait is placed mechanically and remains clear throughout; neither account avatar is replaced. A native disclosure can hide the moving hero without hiding the ordinary Markdown role, context, links and evidence. Regenerate with:
+The current hero is `assets/identity-portrait.svg`, described above. The previous `assets/identity-signal.png` Decision Loom hero remains archived with its mobile/static companions. It rotates through a 4.68-second full-RGB APNG loop; regenerate that prior artwork with:
 
 ```sh
 python scripts/render_signal_identity.py --portrait /path/to/approved-square-portrait.png
